@@ -1,0 +1,30 @@
+<div class="row manage-employee-tabs">
+  <div class="col-sm-12">
+    <ngb-tabset>
+      <ngb-tab title="Manage Employee">
+        <ng-template ngbTabContent>
+          <app-card [title]="'Manage Employees'" [showBreadcrumbs]="true" [titleIcon]="'icofont-users'"
+            [@fadeInOutTranslate] [cardOptionBlock]="false" class="m-t-15 cardBlock">
+            <app-employee-list></app-employee-list>
+          </app-card>
+        </ng-template>
+      </ngb-tab>
+      <ngb-tab title="Add Employee">
+        <ng-template ngbTabContent>
+          <app-card [title]="'Add Employee'" [showBreadcrumbs]="true" [titleIcon]="'icofont-contact-add'"
+            [@fadeInOutTranslate] [cardOptionBlock]="false" class="m-t-15 cardBlock">
+            <app-add-employees></app-add-employees>
+          </app-card>
+        </ng-template>
+      </ngb-tab>
+      <ngb-tab title="Export Employee List">
+        <ng-template ngbTabContent>
+          <app-card [title]="'Export Employee List'" [showBreadcrumbs]="true" [titleIcon]="'fas fa-file-export'"
+            [@fadeInOutTranslate] [cardOptionBlock]="false" class="m-t-15 cardBlock">
+            <app-export-employee-list></app-export-employee-list>
+          </app-card>
+        </ng-template>
+      </ngb-tab>
+    </ngb-tabset>
+  </div>
+</div>

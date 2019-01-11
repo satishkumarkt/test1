@@ -1,0 +1,29 @@
+<form [formGroup]="myForm" (ngSubmit)="onSubmit()">
+  <div class="row emp-list">
+    <div class="col-sm-12 col-xl-12 text-right tab-top-right-section">
+      <div class="top-buttons-section">
+        <p>Enable OnGoing Monitoring:</p>
+        <span>Yes | No</span>
+        <ui-switch class="js-single" color="#EA1C2C" switchColor="#fff" size="small" formControlName="enableOngoingMonitor"
+          checked></ui-switch>
+        <button type="submit" class="btn btn-primary ripple light">Add
+          Employee</button>
+      </div>
+    </div>
+  </div>
+  <perfect-scrollbar class="overflow-container" [style.width]="'100%'" [style.height]="'658px'" [config]="config">
+    <div class="row">
+      <div class="col-xl-4">
+        <app-personal-details [personalDetails]='myForm.controls.personalDetails'></app-personal-details>
+        <app-bank-details [bankDetails]="myForm.controls.bankDetails"></app-bank-details>
+      </div>
+      <div class="col-xl-8">
+        <app-contact-details [contactDetails]="myForm.controls.contactDetails"></app-contact-details>
+        <hr>
+        <app-office-employee-details [employeeDetails]="myForm.controls.employeeDetails"></app-office-employee-details>
+        <hr>
+        <app-next-of-kin></app-next-of-kin>
+      </div>
+    </div>
+  </perfect-scrollbar>
+</form>

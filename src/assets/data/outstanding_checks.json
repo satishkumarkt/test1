@@ -1,0 +1,8 @@
+[
+    {
+        "check": "No directors of vendor are listed as active employees"
+    },
+    {
+        "check": "Vendor directors are directors of another active vendor"
+    }
+]

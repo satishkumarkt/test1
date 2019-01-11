@@ -1,0 +1,15 @@
+<h5>Banking Details</h5>
+<div [formGroup]='bankDetails'>
+    <div class="form-group row">
+        <label class="col-sm-4 col-form-label">Bank Name:</label>
+        <div class="col-sm-8">
+        <ng-select [ngClass]="'ng-select'" id="bankName" name="bankName" [options]="bankNames" formControlName="bankName" placeholder="Select Bank..."> </ng-select>
+        </div>
+    </div>
+    <div class="form-group row">
+        <label class="col-sm-4 col-form-label">Bank Account Type:</label>
+        <div class="col-sm-8">
+        <ng-select [ngClass]="'ng-select'" [options]="accountTypes" id="accountType" name="accountType" formControlName="accountType" placeholder="Select Account Type..."> </ng-select>
+        </div>
+    </div>
+</div>

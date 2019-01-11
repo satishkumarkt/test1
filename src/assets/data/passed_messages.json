@@ -1,0 +1,8 @@
+[
+    {
+        "message": "Employee has no family member who is a director of an active vendor"
+    },
+    {
+        "message": "Employee is not a director of an inactive vendor"
+    }
+]

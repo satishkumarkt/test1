@@ -1,0 +1,42 @@
+[
+    {
+        "rowLabel": "AR Final Deregistration",
+        "noOfVendors": 27
+    },
+    {
+        "rowLabel": "Business Rescue",
+        "noOfVendors": 2
+    },
+    {
+        "rowLabel": "Conversion CO/CC or CC/CO",
+        "noOfVendors": 23
+    },
+    {
+        "rowLabel": "Deregistration AC Merger",
+        "noOfVendors": 2
+    },
+    {
+        "rowLabel": "Deregistration Final",
+        "noOfVendors": 7
+    },
+    {
+        "rowLabel": "Deregistration Process",
+        "noOfVendors": 14
+    },
+    {
+        "rowLabel": "Duplicate Name",
+        "noOfVendors": 4
+    },
+    {
+        "rowLabel": "Cancelled",
+        "noOfVendors": 1
+    },
+    {
+        "rowLabel": "In Liquidation",
+        "noOfVendors": 1
+    },
+    {
+        "rowLabel": "Voluntary Liquidation",
+        "noOfVendors": 9
+    }
+]

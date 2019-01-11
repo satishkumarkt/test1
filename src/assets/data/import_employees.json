@@ -1,0 +1,44 @@
+[
+    {
+        "sessionId": 1,
+        "fileName": "Judy Test.xls",
+        "date": "12-13-2016 10:40:19",
+        "status": "Incomplete (Error)",
+        "noOfFailures": 1
+    },
+    {
+        "sessionId": 2,
+        "fileName": "Employee_Import (3).xlsx",
+        "date": "11-08-2016 14:00:43",
+        "status": "Completed",
+        "noOfFailures": 0
+    },
+    {
+        "sessionId": 3,
+        "fileName": "Employee_Import.xlsx",
+        "date": "06-18-2016 22:20:14",
+        "status": "Completed",
+        "noOfFailures": 0
+    },
+    {
+        "sessionId": 4,
+        "fileName": "Employee .xlsx",
+        "date": "09-04-2016 19:22:42",
+        "status": "Incomplete (Error)",
+        "noOfFailures": 2
+    },
+    {
+        "sessionId": 5,
+        "fileName": "Copy_Employee .xlsx",
+        "date": "12-13-2016 10:40:19",
+        "status": "Incomplete (Error)",
+        "noOfFailures": 1
+    },
+    {
+        "sessionId": 6,
+        "fileName": "Employee .xlsx",
+        "date": "12-13-2016- 10:40:19",
+        "status": "Completed",
+        "noOfFailures": 0
+    }
+]

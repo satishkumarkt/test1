@@ -1,0 +1,12 @@
+[
+    {
+        "rowLabel": "Employee is a director/s or member of a active Vendor",
+        "noOfEmployees": 20,
+        "noOfVendors": 20
+    },
+    {
+        "rowLabel": "Vendor directors are one of clients active employee’s",
+        "noOfEmployees": 19,
+        "noOfVendors": 19
+    }
+]

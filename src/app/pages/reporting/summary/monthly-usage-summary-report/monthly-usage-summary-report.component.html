@@ -1,0 +1,30 @@
+<div class="row">
+  <div class="col-md-12 text-right">
+    <button class="btn btn-primary ripple light">Download PDF</button>
+  </div>
+</div>
+<perfect-scrollbar class="overflow-container" [style.width]="'100%'" [style.height]="'812px'" [config]="config">
+  <div class="row">
+    <div class="col-md-12">
+      <h4>Employees with business interest</h4>
+      <div class="table-responsive">
+        <table class="table table-styling">
+          <tr class="table-primary">
+            <th>Year</th>
+            <th>Month</th>
+            <th>No. of Vendors Added</th>
+            <th>No. of Employees Added</th>
+          </tr>
+          <tr *ngFor="let row of monthlyWiseEmployeeJoinedList; let ind = index">
+            <!-- <td>{{ (ind === 0 || (ind > 0 && monthlyWiseEmployeeJoinedList[ind - 1]['year'] !== row['year'])) ? row['year'] : '' }}</td> -->
+            <!-- Need sorted list -->
+            <td>{{ (ind === 0 || (row['year'] | date: 'yyyy') !== (monthlyWiseEmployeeJoinedList[ind - 1]['year'] | date: 'yyyy')) ? (row['year'] | date: 'yyyy') : '' }}</td>
+            <td>{{ row['year'] | date: 'MMMM' }}</td>
+            <td>{{ row['noOfVendorsAdded'] }}</td>
+            <td>{{ row['noOfEmployeesAdded'] }}</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </div>
+</perfect-scrollbar>

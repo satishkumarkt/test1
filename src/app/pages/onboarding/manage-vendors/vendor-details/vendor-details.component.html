@@ -1,0 +1,63 @@
+<h5>Vendor Details</h5>
+<div [formGroup]='vendorDetails'>
+  <div class="form-group row">
+    <label class="col-sm-4 col-form-label">Name:</label>
+    <div class="col-sm-8">
+      <input type="text" class="form-control" id="name" placeholder="Enter First Name" formControlName="name">
+      <div class="messages text-danger" *ngIf="vendorDetails.controls.name.errors?.required && vendorDetails.controls.name.dirty">
+        Name can't be blank
+      </div>
+    </div>
+  </div>
+  <div class="form-group row">
+    <label class="col-sm-4 col-form-label">Nationality:</label>
+    <div class="col-sm-8">
+      <ng-select [ngClass]="'ng-select'" [options]="nationalities" formControlName="nationality" id="nationality"> </ng-select>
+    </div>
+  </div>
+  <div class="form-group row">
+    <label class="col-sm-4 col-form-label">Registration No:</label>
+    <div class="col-sm-8">
+      <input type="text" class="form-control" id="registrationNo" placeholder="Enter Registration No" formControlName="registrationNo">
+      <div class="messages text-danger" *ngIf="vendorDetails.controls.registrationNo.errors?.required && vendorDetails.controls.registrationNo.dirty">
+        Registration No can't be blank
+      </div>
+      <div class="messages text-danger" *ngIf="vendorDetails.controls.registrationNo.errors?.number">
+          Registration No must be a number
+        </div>
+    </div>
+  </div>
+
+  <div class="form-group row">
+    <label class="col-sm-4 col-form-label">VAT No:</label>
+    <div class="col-sm-8">
+      <input type="text" class="form-control" id="vatNo" placeholder="Enter VAT No" formControlName="vatNo">
+      <div class="messages text-danger" *ngIf="vendorDetails.controls.vatNo.errors?.required && vendorDetails.controls.vatNo.dirty">
+        VAT No. can't be blank
+      </div>
+      <div class="messages text-danger" *ngIf="vendorDetails.controls.vatNo.errors?.number">
+        VAT No. must be a number
+        </div>
+    </div>
+  </div>
+
+  <div class="form-group row">
+    <label class="col-sm-4 col-form-label">Income Tax No:</label>
+    <div class="col-sm-8">
+      <input type="text" class="form-control" id="incomeTaxNo" placeholder="Enter Income Tax No" formControlName="incomeTaxNo">
+      <div class="messages text-danger" *ngIf="vendorDetails.controls.incomeTaxNo.errors?.required && vendorDetails.controls.incomeTaxNo.dirty">
+        Income Tax No. can't be blank
+      </div>
+      <div class="messages text-danger" *ngIf="vendorDetails.controls.incomeTaxNo.errors?.number">
+        Income Tax No. must be a number
+        </div>
+    </div>
+  </div>
+  
+  <!-- <div class="form-group row">
+    <label class="col-sm-4 col-form-label">Client User:</label>
+    <div class="col-sm-8">
+      <ng-select [ngClass]="'ng-select'" [options]="nationalities" formControlName="clientUser" id="clientUser"> </ng-select>
+    </div>
+  </div> -->
+</div>

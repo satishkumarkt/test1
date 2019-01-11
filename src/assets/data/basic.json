@@ -1,0 +1,52 @@
+[
+  {
+    "category": "Employee",
+    "conflict": "Employees with business interests",
+    "uniquealerts": "23"
+  },
+  {
+    "category": "Employee",
+    "conflict": "Number of Employees with property conflicts",
+    "uniquealerts": "32"
+  },
+  {
+    "category": "Employee",
+    "conflict": "Employee with failed SAFPS check",
+    "uniquealerts": "23"
+  },
+  {
+    "category": "Vendor",
+    "conflict": "Vendors with business status other then in business",
+    "uniquealerts": "2"
+  },
+  {
+    "category": "Vendor",
+    "conflict": "Vendor in conflict with employees",
+    "uniquealerts": "44"
+  },
+  {
+    "category": "Vendor",
+    "conflict": "Directors of vendors on PERSAL list",
+    "uniquealerts": "32"
+  },
+  {
+    "category": "Vendor",
+    "conflict": "Number of vendors with property conflicts",
+    "uniquealerts": "4"
+  },
+  {
+    "category": "Vendor",
+    "conflict": "Vendor Directors with common directors",
+    "uniquealerts": "5"
+  },
+  {
+    "category": "Vendor",
+    "conflict": "Vendors with failed SARS chekcs",
+    "uniquealerts": "11"
+  },
+  {
+    "category": "Vendor",
+    "conflict": "Vendors with failed SAFPS checks",
+    "uniquealerts": "22"
+  }
+]

@@ -1,0 +1,22 @@
+<div class="row manage-employee-tabs">
+  <div class="col-sm-12">
+    <ngb-tabset>
+      <ngb-tab title="My Outstanding Tasks">
+        <ng-template ngbTabContent>
+          <app-card [title]="'My Outstanding Tasks'" [showBreadcrumbs]="true" [titleIcon]="'icofont-users'"
+            [@fadeInOutTranslate] [cardOptionBlock]="false" class="m-t-15 cardBlock">
+            <app-my-outstanding-tasks></app-my-outstanding-tasks>
+          </app-card>
+        </ng-template>
+      </ngb-tab>
+      <ngb-tab title="Company Outstanding Tasks">
+        <ng-template ngbTabContent>
+          <app-card [title]="'Company Outstanding Tasks'" [showBreadcrumbs]="true" [titleIcon]="'icofont-users'"
+            [@fadeInOutTranslate] [cardOptionBlock]="false" class="m-t-15 cardBlock">
+            <app-company-outstanding-tasks></app-company-outstanding-tasks>
+          </app-card>
+        </ng-template>
+      </ngb-tab>
+    </ngb-tabset>
+  </div>
+</div>

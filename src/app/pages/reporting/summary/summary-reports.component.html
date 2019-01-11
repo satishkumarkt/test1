@@ -1,0 +1,22 @@
+<div class="row manage-employee-tabs">
+  <div class="col-sm-12">
+    <ngb-tabset>
+      <ngb-tab title="Database Summary Reports">
+        <ng-template ngbTabContent>
+          <app-card [title]="'Database Summary Reports'" [showBreadcrumbs]="true" [titleIcon]="'icofont-read-book'"
+            [@fadeInOutTranslate] [cardOptionBlock]="false" class="m-t-15 cardBlock">
+            <app-database-summary-reports></app-database-summary-reports>
+          </app-card>
+        </ng-template>
+      </ngb-tab>
+      <ngb-tab title="Monthly Usage Summary Report">
+        <ng-template ngbTabContent>
+          <app-card [title]="'Monthly Usage Summary Report'" [showBreadcrumbs]="true" [titleIcon]="'icofont-read-book'"
+            [@fadeInOutTranslate] [cardOptionBlock]="false" class="m-t-15 cardBlock">
+            <app-monthly-usage-summary-report></app-monthly-usage-summary-report>
+          </app-card>
+        </ng-template>
+      </ngb-tab>
+    </ngb-tabset>
+  </div>
+</div>

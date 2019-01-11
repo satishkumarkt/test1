@@ -1,0 +1,166 @@
+<app-card [title]="'Employee Results'" [personName]="employee.employeeName" [showBreadcrumbs]="true" [titleIcon]="'icofont-presentation'"
+  [@fadeInOutTranslate] [cardOptionBlock]="false" class="m-t-15 cardBlock">
+  <button class="btn btn-inverse ripple light m-l-10" (click)="goBack()">Back</button>
+  <perfect-scrollbar>
+    <h4>Report for {{ employee.employeeName }} - (ID: {{ employee.employeeId }})</h4>
+    <div class="row">
+      <div class="col-md-6">
+      </div>
+      <div class="col-md-6">
+        <div class="box-container">
+          <div class="box-header">
+            Employee Details
+          </div>
+          <div class="box-body">
+            <table>
+              <tr>
+                <td>Name:</td>
+                <td>{{ employee.employeeName }}</td>
+              </tr>
+              <tr>
+                <td>ID Number:</td>
+                <td>{{ employee.employeeId }}</td>
+              </tr>
+              <tr>
+                <td>Nationality:</td>
+                <td>{{ 'South African' }}</td>
+              </tr>
+              <tr>
+                <td>Designation:</td>
+                <td>{{ 'Developer' }}</td>
+              </tr>
+              <tr>
+                <td>Contact No.:</td>
+                <td>{{ '081 338 9832' }}</td>
+              </tr>
+            </table>
+          </div>
+          <div class="box-footer">
+            <table>
+              <tr>
+                <td>VIEW CIPC REPORT</td>
+                <td>VIEW PROPERTY REPORT</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-6">
+        <h4>Vendor directors are active employees</h4>
+        <div class="box-container">
+          <div class="box-header">
+            <table>
+              <tr>
+                <th>Employee Name</th>
+                <th>Registered Name</th>
+              </tr>
+            </table>
+          </div>
+          <div class="box-body">
+            <table>
+              <tr>
+                <td>{{ employee.employeeName }}</td>
+                <td>STANDARD BANK GROUP</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <h4>Vendor directors are directors of another active vendor</h4>
+        <div class="box-container">
+          <div class="box-header">
+            <table>
+              <tr>
+                <th>Registered Name</th>
+                <th>Director Status to Vendor</th>
+              </tr>
+            </table>
+          </div>
+          <div class="box-body">
+            <table>
+              <tr>
+                <td>{{ employee.employeeName }}</td>
+                <td>STANDARD BANK GROUP</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <h4>Vendor name does not match registered name on CIPC</h4>
+        <ngx-datatable class='data-table' [columnMode]="'force'" [scrollbarH]="false" [headerHeight]="50" [footerHeight]="0" rowHeight="auto" [rows]="mismatchNames" #mismatchTable>
+          <ngx-datatable-column name="Common Company" [sortable]="false">
+            <ng-template let-row="row" ngx-datatable-cell-template>
+              <p>{{ row['name'] }}</p>
+              <p>{{ row['id'] }}</p>
+            </ng-template>
+          </ngx-datatable-column>
+          <ngx-datatable-column name="Employee Status to Common Company" [sortable]="false">
+            <ng-template let-row="row" ngx-datatable-cell-template>
+              <i class="fas fa-check-circle userActive" *ngIf="row['employeeStatus'] === 'Active'"></i>
+              <i class="fas fa-minus-circle userRestricted" *ngIf="row['employeeStatus'] === 'Restricted'"></i>
+              <i class="fas fa-times-circle userInActive" *ngIf="row['employeeStatus'] === 'In-active'"></i>
+              {{ row['employeeStatus'] }}
+            </ng-template>
+          </ngx-datatable-column>
+          <ngx-datatable-column name="Co Director Status to Common Company" [sortable]="false">
+            <ng-template let-row="row" ngx-datatable-cell-template>
+              <p>{{ row['coDirectorCompany'] }}</p>
+              <p>{{ row['coDirectorStatus'] }}</p>
+            </ng-template>
+          </ngx-datatable-column>
+          <ngx-datatable-column name="Co Director" [sortable]="false">
+            <ng-template let-row="row" ngx-datatable-cell-template>
+              {{ row['coDirector'] }}
+            </ng-template>
+          </ngx-datatable-column>
+          <ngx-datatable-column name="Co Director Status to Conflict Vendor" [sortable]="false">
+            <ng-template let-row="row" ngx-datatable-cell-template>
+              <p>{{ row['vendor'] }}</p>
+              <p>{{ row['vendorId'] }}</p>
+            </ng-template>
+          </ngx-datatable-column>
+          <ngx-datatable-column name="Employee" [sortable]="false">
+            <ng-template let-row="row" ngx-datatable-cell-template>
+              {{ row['status'] }}
+            </ng-template>
+          </ngx-datatable-column>
+        </ngx-datatable>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <h4>All Passed Checks</h4>
+        <ngx-datatable class='data-table' [columnMode]="'force'" [scrollbarH]="false" [headerHeight]="50"
+          [footerHeight]="0" [rowHeight]="50" [rows]="passedMessages" #passedMessagesTable>
+          <ngx-datatable-column name="Passed Message" [sortable]="false">
+            <ng-template let-row="row" ngx-datatable-cell-template>
+                <i class="fas fa-check-circle userActive"></i> {{ row['message'] }}
+            </ng-template>
+          </ngx-datatable-column>
+        </ngx-datatable>
+      </div>
+    </div>
+  </perfect-scrollbar>
+</app-card>
+<div id="styleSelector" [ngClass]="configOpenRightBar">
+  <div class="selector-toggle">
+    <a href="javascript:" placement="left" class="ripple light" ngbTooltip=" Suggested Action on Alert" (click)="toggleRightbar()"></a>
+  </div>
+  <ul>
+    <li>
+      <p class="selector-title">Request Lastest Bank Verfication </p>
+    </li>
+    <li>
+      <p class="selector-title">Suspend service with Employee</p>
+    </li>
+    <li>
+      <p class="selector-title">Deactivate Employee</p>
+    </li>
+  </ul>
+</div>

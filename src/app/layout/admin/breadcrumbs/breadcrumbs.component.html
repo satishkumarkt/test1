@@ -1,0 +1,17 @@
+<ng-container class="" *ngFor="let breadcrumb of breadcrumbs; let last = last">
+  <ng-container class="page-header" *ngIf="breadcrumb.status && last">
+    <ul class="breadcrumb" *ngIf="last">
+      <li class="breadcrumb-item">
+        <a [routerLink]="['/dashboard/default/']">
+          <i class="feather icon-home"></i>
+        </a>
+      </li>
+      <li class="breadcrumb-item" *ngFor="let breadcrumb of breadcrumbs;">
+        <a [ngClass]="breadcrumb.status === false ? 'not-active': ''" [routerLink]="breadcrumb.url">{{breadcrumb.label }}</a>
+      </li>
+      <li class="breadcrumb-item" *ngIf="TabTitle">
+        {{TabTitle}}
+      </li>
+    </ul>
+  </ng-container>
+</ng-container>

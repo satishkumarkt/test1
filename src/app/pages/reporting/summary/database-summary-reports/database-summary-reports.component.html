@@ -1,0 +1,76 @@
+<div class="row" id="dec">
+  <div class="col-md-12 text-right">
+    <button class="btn btn-primary ripple light">Download PDF</button>
+  </div>
+</div>
+<perfect-scrollbar class="overflow-container" [style.width]="'100%'" [style.height]="'663px'" [config]="config">
+  <div id="dec">
+    <app-employee-vendor-pie-chart></app-employee-vendor-pie-chart>
+    <div class="row">
+      <div class="col-md-12 col-lg-6">
+        <h4>Number of vendors with a status other than “In Business”</h4>
+        <div class="table-responsive">
+          <table class="table table-styling">
+            <tr class="table-primary">
+              <th>Row Labels</th>
+              <th>No. of Vendors</th>
+            </tr>
+            <tr *ngFor="let row of notInBusinessVendors">
+              <td>{{ row['rowLabel'] }}</td>
+              <td>{{ row['noOfVendors'] }}</td>
+            </tr>
+            <tr *ngIf="notInBusinessVendors.length > 0">
+              <td>Grand Total</td>
+              <td>{{ getSummaryOfColumn(notInBusinessVendors, 'noOfVendors') }}</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+      <div class="col-md-12 col-lg-6">
+        <div class="row">
+          <div class="col-md-12">
+            <h4>Vendors PERSAL List</h4>
+            <div class="table-responsive">
+              <table class="table table-styling">
+                <tr class="table-primary">
+                  <th>Row Labels</th>
+                  <th>No. of Vendors</th>
+                </tr>
+                <tr *ngFor="let row of vendorPersalList">
+                  <td>{{ row['rowLabel'] }}</td>
+                  <td>{{ row['noOfVendors'] }}</td>
+                </tr>
+                <tr *ngIf="vendorPersalList.length > 0">
+                  <td>Grand Total</td>
+                  <td>{{ getSummaryOfColumn(vendorPersalList, 'noOfVendors') }}</td>
+                </tr>
+              </table>
+            </div>
+          </div>
+          <div class="col-md-12">
+            <h4>Conflict of interest - vendor director is an active employee</h4>
+            <div class="table-responsive">
+              <table class="table table-styling">
+                <tr class="table-primary">
+                  <th>Row Labels</th>
+                  <th>No. of Employees</th>
+                  <th>No. of Vendors</th>
+                </tr>
+                <tr *ngFor="let row of confictOfInterest">
+                  <td>{{ row['rowLabel'] }}</td>
+                  <td>{{ row['noOfEmployees'] }}</td>
+                  <td>{{ row['noOfVendors'] }}</td>
+                </tr>
+                <tr *ngIf="confictOfInterest.length > 0">
+                  <td>Grand Total</td>
+                  <td>{{ getSummaryOfColumn(confictOfInterest, 'noOfEmployees') }}</td>
+                  <td>{{ getSummaryOfColumn(confictOfInterest, 'noOfVendors') }}</td>
+                </tr>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</perfect-scrollbar>

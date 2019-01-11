@@ -1,0 +1,14 @@
+[
+    {
+        "check": "Vendor was not found on Internal Non-Preferred List"
+    },
+    {
+        "check": "No vendor directors have co-directors that are on internal Non-Preferred employee list"
+    },
+    {
+        "check": "No vendor directors also direct an internally listed Non-Preferred vendor"
+    },
+    {
+        "check": "No Vendor directors are directors of a company found in National Treasury Non-Preferred list"
+    }
+]

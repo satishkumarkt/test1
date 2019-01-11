@@ -1,0 +1,65 @@
+<div class="row manage-employee-tabs" *ngIf="!isEmployeeDetailsRequested">
+  <div class="col-sm-12">
+    <app-card [title]="'Employee Results'" [displayTitle]="false" [showBreadcrumbs]="true" [titleIcon]="'icofont-presentation'"
+      [@fadeInOutTranslate] [cardOptionBlock]="false" class="m-t-15 cardBlock">
+      <app-employee-result-list (viewEmployeeDetailsRequested)="viewEmployeeDetails($event)"></app-employee-result-list>
+    </app-card>
+  </div>
+</div>
+
+<div class="row manage-employee-tabs" *ngIf="isEmployeeDetailsRequested">
+  <div class="col-sm-12">
+    <ngb-tabset>
+      <ngb-tab title="Summary">
+        <ng-template ngbTabContent>
+          <app-summary [employee]="selectedEmployee" (backToEmployeeList)="showEmployeeList()"></app-summary>
+        </ng-template>
+      </ngb-tab>
+      <ngb-tab title="CIPC">
+        <ng-template ngbTabContent>
+          <app-cipc [employee]="selectedEmployee" (backToEmployeeList)="showEmployeeList()"></app-cipc>
+        </ng-template>
+      </ngb-tab>
+      <ngb-tab title="Restricted List">
+        <ng-template ngbTabContent>
+          <app-card [title]="'Restricted List'" [showBreadcrumbs]="true" [titleIcon]="'icofont-presentation'"
+            [@fadeInOutTranslate] [cardOptionBlock]="false" class="m-t-15 cardBlock">
+            <app-restricted-list></app-restricted-list>
+          </app-card>
+        </ng-template>
+      </ngb-tab>
+      <ngb-tab title="SAFPS">
+        <ng-template ngbTabContent>
+          <app-card [title]="'SAFPS'" [showBreadcrumbs]="true" [titleIcon]="'icofont-presentation'"
+            [@fadeInOutTranslate] [cardOptionBlock]="false" class="m-t-15 cardBlock">
+            <app-safps></app-safps>
+          </app-card>
+        </ng-template>
+      </ngb-tab>
+      <ngb-tab title="PERSAL">
+        <ng-template ngbTabContent>
+          <app-card [title]="'PERSAL'" [showBreadcrumbs]="true" [titleIcon]="'icofont-presentation'"
+            [@fadeInOutTranslate] [cardOptionBlock]="false" class="m-t-15 cardBlock">
+            <app-persal></app-persal>
+          </app-card>
+        </ng-template>
+      </ngb-tab>
+      <ngb-tab title="Property">
+        <ng-template ngbTabContent>
+          <app-card [title]="'Property'" [showBreadcrumbs]="true" [titleIcon]="'icofont-presentation'"
+            [@fadeInOutTranslate] [cardOptionBlock]="false" class="m-t-15 cardBlock">
+            <app-property></app-property>
+          </app-card>
+        </ng-template>
+      </ngb-tab>
+      <ngb-tab title="Bank Verification">
+        <ng-template ngbTabContent>
+          <app-card [title]="'Bank Verification'" [showBreadcrumbs]="true" [titleIcon]="'icofont-presentation'"
+            [@fadeInOutTranslate] [cardOptionBlock]="false" class="m-t-15 cardBlock">
+            <app-bank-verification></app-bank-verification>
+          </app-card>
+        </ng-template>
+      </ngb-tab>
+    </ngb-tabset>
+  </div>
+</div>

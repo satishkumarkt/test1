@@ -1,0 +1,31 @@
+<form [formGroup]="userForm">
+  <div class="row">
+    <div class="col-md-12 text-right">
+      <button type="button" class="btn btn-primary ripple light">Update</button>
+      <button type="button" class="btn btn-inverse ripple light m-l-10" (click)="onCancel()">Cancel</button>
+    </div>
+  </div>
+  <perfect-scrollbar class="overflow-container" [style.width]="'100%'" [style.height]="'655px'" [config]="config">
+    <div class="row">
+      <div class="col-md-8">
+        <app-user-details [userDetailsForm]="userForm.controls.userDetails"></app-user-details>
+      </div>
+      <div class="col-md-4">
+        <app-user-roles [userRolesForm]="userForm.controls.userRoles"></app-user-roles>
+      </div>
+    </div>
+    <hr />
+    <div class="row">
+      <div class="col-md-8">
+        <app-login-details [loginDetailsForm]="userForm.controls.loginDetails"></app-login-details>
+      </div>
+    </div>
+    <hr />
+    <div class="row">
+      <div class="col-md-6">
+        <h4>Comments</h4>
+        <textarea class="form-control" rows="6" placeholder="Insert Comment.."></textarea>
+      </div>
+    </div>
+  </perfect-scrollbar>
+</form>

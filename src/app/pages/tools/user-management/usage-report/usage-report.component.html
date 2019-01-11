@@ -1,0 +1,47 @@
+<div class="row">
+  <div class="col-md-12">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="row" [style.justify-content]="'flex-end'">
+          <div class="col-md-2">
+            <div class="input-group">
+              <input class="form-control" placeholder="Start date.." name="startDate" [(ngModel)]="startDate"
+                ngbDatepicker [dayTemplate]="customDay" [markDisabled]="isDisabled" #startDateRef="ngbDatepicker" date
+                type="text" readonly>
+              <div class="input-group-append bg-default" (click)="startDateRef.toggle()">
+                <span class="input-group-text icofont icofont-ui-calendar"></span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-2">
+            <div class="input-group">
+              <input class="form-control" placeholder="End date.." name="endDate" [(ngModel)]="endDate" ngbDatepicker
+                [dayTemplate]="customDay" [markDisabled]="isDisabled" #endDateRef="ngbDatepicker" date type="text"
+                readonly>
+              <div class="input-group-append bg-default" (click)="endDateRef.toggle()">
+                <span class="input-group-text icofont icofont-ui-calendar"></span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-1">
+            <button class="btn btn-primary ripple light">Search</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <perfect-scrollbar class="overflow-container" [style.width]="'100%'" [style.height]="'663px'">
+      <div class="row">
+        <div class="col-md-12">
+          <ngx-datatable class='data-table' [columnMode]="'force'" [scrollbarH]="true" [headerHeight]="70"
+            [footerHeight]="0" [rowHeight]="50" [rows]='usageReportList' #usageReportTable>
+            <ngx-datatable-column *ngFor="let column of usageReportColumns" [name]="column.name" [sortable]="true" [prop]="column.key">
+              <ng-template let-value="value" let-row="row" ngx-datatable-cell-template>
+                {{ row[column.key] }}
+              </ng-template>
+            </ngx-datatable-column>
+          </ngx-datatable>
+        </div>
+      </div>
+    </perfect-scrollbar>
+  </div>
+</div>

@@ -1,0 +1,63 @@
+<app-card [title]="'Vendor Results'" [personName]="vendor.vendorName" [showBreadcrumbs]="true" [titleIcon]="'icofont-presentation'"
+  [@fadeInOutTranslate] [cardOptionBlock]="false" class="m-t-15 cardBlock">
+  <button class="btn btn-inverse ripple light m-l-10" (click)="goBack()">Back</button>
+  <h4>Report for {{ vendor.vendorName }} - (Reg No.: {{ vendor.vendorRegNo }})</h4>
+  <table>
+    <tr>
+      <td>Status</td>
+      <td>Rating Expired</td>
+    </tr>
+    <tr>
+      <td>Expiry Date</td>
+      <td>21-07-2016</td>
+    </tr>
+    <tr>
+      <td>BEE Status Level</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>Company Size</td>
+      <td>QSE</td>
+    </tr>
+    <tr>
+      <td>Percentage Black Ownership:</td>
+      <td>51</td>
+    </tr>
+    <tr>
+      <td>Percentage Black Female Ownership</td>
+      <td>14</td>
+    </tr>
+    <tr>
+      <td>Value Adding Vendor</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>BEE Certificate</td>
+      <td>View</td>
+    </tr>
+    <tr>
+      <td>Comment</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Action Date</td>
+      <td></td>
+    </tr>
+  </table>
+</app-card>
+<div id="styleSelector" [ngClass]="configOpenRightBar">
+  <div class="selector-toggle">
+    <a href="javascript:" placement="left" class="ripple light" ngbTooltip=" Suggested Action on Alert" (click)="toggleRightbar()"></a>
+  </div>
+  <ul>
+    <li>
+      <p class="selector-title">Request Lastest BBE Certificate for Vendor</p>
+    </li>
+    <li>
+      <p class="selector-title">Suspend service with Vendor</p>
+    </li>
+    <li>
+      <p class="selector-title">Deactivate Vendor</p>
+    </li>
+  </ul>
+</div>

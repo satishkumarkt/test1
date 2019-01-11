@@ -1,0 +1,82 @@
+[
+    {
+        "userName": "sherly.albert@lexisnexis.co.za",
+        "roleName": "Client Master Administrator",
+        "firstName": "Sherly",
+        "surName": "Mewborn",
+        "dateCreated": "2017-03-13",
+        "status": "In-active"
+    },
+    {
+        "userName": "test@mail.org",
+        "roleName": "Client Master Administrator",
+        "firstName": "Test",
+        "surName": "User",
+        "dateCreated": "2017-03-07",
+        "status": "In-active"
+    },
+    {
+        "userName": "sazisipho@lexisnexis.co.za",
+        "roleName": "Client User",
+        "firstName": "Sazi",
+        "surName": "Nyathi",
+        "dateCreated": "2017-03-06",
+        "status": "Active"
+    },
+    {
+        "userName": "phly.mjo@gmail.com",
+        "roleName": "Client Master Administrator",
+        "firstName": "Aphila",
+        "surName": "Mjobo",
+        "dateCreated": "2017-02-14",
+        "status": "Restricted"
+    },
+    {
+        "userName": "fiona.naicker@lexisnexis.co.za",
+        "roleName": "Client Master Administrator",
+        "firstName": "Fiona",
+        "surName": "Naicker",
+        "dateCreated": "2017-02-06",
+        "status": "In-active"
+    },
+    {
+        "userName": "shivan.singh@lexisnexis.co.za",
+        "roleName": "Client Master Administrator",
+        "firstName": "Shivan",
+        "surName": "Singh",
+        "dateCreated": "2017-02-03",
+        "status": "Active"
+    },
+    {
+        "userName": "nkosinathi.ntshayintshayi@lexisnexis.co.za",
+        "roleName": "Client Authoriser",
+        "firstName": "Nkosinathi",
+        "surName": "Ntshayintshayi",
+        "dateCreated": "2016-12-20",
+        "status": "In-active"
+    },
+    {
+        "userName": "duncsprince@gmail.com",
+        "roleName": "Client Master Administrator",
+        "firstName": "Duncan",
+        "surName": "Prince",
+        "dateCreated": "2016-11-11",
+        "status": "Active"
+    },
+    {
+        "userName": "bhavesh@digicube.co.za",
+        "roleName": "Client User",
+        "firstName": "Bhavesh",
+        "surName": "Devjee",
+        "dateCreated": "2016-08-12",
+        "status": "Active"
+    },
+    {
+        "userName": "jsmith@gmail.com",
+        "roleName": "Client User",
+        "firstName": "Jason",
+        "surName": "Smith",
+        "dateCreated": "2016-07-09",
+        "status": "Active"
+    }
+]

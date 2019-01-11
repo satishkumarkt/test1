@@ -1,0 +1,74 @@
+<div class="row" *ngIf="!empDetailsEditShow">
+  <div class="col-sm-12 col-xl-5"></div>
+  <div class="col-sm-12 col-xl-2 text-right">
+    <div class="input-group input-group-primary">
+      <span class="input-group-prepend"><label class="input-group-text"><i class="icofont icofont-search"></i></label></span>
+      <input type="text" class="form-control" [(ngModel)]="EListSearchText" placeholder="Search...">
+    </div>
+  </div>
+  <div class="col-sm-12 col-xl-2 text-right">
+    <select class="form-control form-control-primary" [(ngModel)]="EListSelectedColumn">
+      <option *ngFor="let column of employeeSearchColumns" [ngValue]="column.key">{{ column.name }}</option>
+    </select>
+  </div>
+  <div class="col-sm-12 col-xl-2 text-right">
+    <select class="form-control form-control-primary" [(ngModel)]="EListFilterType">
+      <option value="contains">Contains</option>
+      <option value="startsWith">Starts With</option>
+      <option value="endsWith">Ends With</option>
+      <option value="exact">Exact</option>
+    </select>
+  </div>
+  <div class="col-sm-12 col-xl-1 text-right">
+    <button class="btn btn-primary ripple light" (click)="onSearch(EListSelectedColumn, EListFilterType, EListSearchText)">Search</button>
+  </div>
+</div>
+
+<perfect-scrollbar class="overflow-container" [style.width]="'100%'" [style.height]="'663px'" [config]="config"
+  *ngIf="!empDetailsEditShow">
+  <div class="row">
+    <div class="col-sm-12 col-xl-12 text-right">
+      <div class="pageCount">
+        <span class="totalreslt">Total employees: {{cachedEmployeeList.length}}</span>
+        <span class="cont">
+          <span>Results per page:</span>
+          <span>
+            <a href="javascript:void(0)" [ngClass]="pageLimit == 10? 'pageLimitActive': ''" (click)="onChangePageLimit(10)">10</a>
+            <a href="javascript:void(0)" [ngClass]="pageLimit == 20? 'pageLimitActive': ''" (click)="onChangePageLimit(20)">20</a>
+            <a href="javascript:void(0)" [ngClass]="pageLimit == 50? 'pageLimitActive': ''" (click)="onChangePageLimit(50)">50</a>
+          </span>
+        </span>
+      </div>
+    </div>
+  </div>
+  <!-- <div class="row">
+  <div class="col-sm-12">
+    <label class="dt-cust-search float-right">
+      <div class="form-group">
+        <label>Search: </label>
+        <input type='text' class="form-control input-sm m-l-10" placeholder='Search Name' (keyup)='updateFilter($event)' />
+      </div>
+    </label>
+  </div>
+</div> <i class="fas fa-minus-circle"></i>-->
+  <ngx-datatable class='data-table' [columnMode]="'force'" [scrollbarH]="true" [headerHeight]="50"
+    [footerHeight]="50" [rowHeight]="50" [limit]="pageLimit" [rows]='employeeList' #employeesTable>
+    <ngx-datatable-column *ngFor="let column of employeeColumns" [name]="column.name" [sortable]="true"
+      [prop]="column.key">
+      <ng-template let-value="value" let-row="row" ngx-datatable-cell-template>
+        <i class="fas fa-check-circle userActive" *ngIf="column.name === 'Status' && row[column.key] === 'Active'"></i>
+        <i class="fas fa-times-circle userInActive" *ngIf="column.name === 'Status' && row[column.key] === 'In-active'"></i>
+        <i class="fas fa-minus-circle userRestricted" *ngIf="column.name === 'Status' && row[column.key] === 'Restricted'"></i>
+        {{ row[column.key] }}
+      </ng-template>
+    </ngx-datatable-column>
+    <ngx-datatable-column name="Edit">
+      <ng-template let-row="row" ngx-datatable-cell-template>
+        <span class="emp-edit" (click)="empDetailsEdit(row.id)">Edit</span>
+      </ng-template>
+    </ngx-datatable-column>
+  </ngx-datatable>
+
+
+</perfect-scrollbar>
+<app-edit-manage-employees [employeeId]="selectedEmployeeId" (backToList)="empDetailsUpdate()" *ngIf="empDetailsEditShow"></app-edit-manage-employees>

@@ -1,0 +1,14 @@
+[
+    {
+        "rowLabel": "Active",
+        "noOfVendors": 8
+    },
+    {
+        "rowLabel": "Not Available",
+        "noOfVendors": 4
+    },
+    {
+        "rowLabel": "Resigned",
+        "noOfVendors": 18
+    }
+]

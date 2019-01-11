@@ -1,0 +1,73 @@
+<div class="row manage-employee-tabs">
+    <div class="col-sm-12">
+        <ngb-tabset>
+            <ngb-tab title="Detailed Reports">
+                <ng-template ngbTabContent>
+                    <app-card [title]="'Detailed Reports'" [showBreadcrumbs]="true" [titleIcon]="'icofont-read-book'"
+                        [@fadeInOutTranslate] [cardOptionBlock]="false" class="m-t-15 cardBlock">
+
+                        <div class="row search-container">
+                            <div class="col-md-6">
+                                <ng-select [ngClass]="'ng-select'" [options]="reports" id="report" [(ngModel)]="report"
+                                    (selected)="loadReport($event)"></ng-select>
+                            </div>
+                            <div class="col-md-6">
+                                <ul class="actions">
+                                    <li>
+                                        <a href="javascript:void(0)">
+                                            <i class="fa fa-print"></i> Print Report
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)">
+                                            <i class="fa fa-download"></i> Download PDF
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)">
+                                            <i class="fa fa-download"></i> Download CSV
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="row pageCount" *ngIf="selectedReport">
+                            <div class="col-md-8">
+                                <h4>{{ selectedReport.label }}</h4>
+                            </div>
+                            <div class="col-md-4">
+                                <span class="totalreslt">Total vendor: {{reportData.length}}</span>
+                                <span class="cont">
+                                    <span>Results per page:</span>
+                                    <span>
+                                        <a href="javascript:void(0)" [ngClass]="pageLimit == 10? 'pageLimitActive': ''"
+                                            (click)="onChangePageLimit(10)">10</a>
+                                        <a href="javascript:void(0)" [ngClass]="pageLimit == 20? 'pageLimitActive': ''"
+                                            (click)="onChangePageLimit(20)">20</a>
+                                        <a href="javascript:void(0)" [ngClass]="pageLimit == 50? 'pageLimitActive': ''"
+                                            (click)="onChangePageLimit(50)">50</a>
+                                    </span>
+                                </span>
+                            </div>
+                        </div>
+
+                        <perfect-scrollbar class="overflow-container" [style.width]="'100%'" [style.height]="'812px'"
+                            [config]="config">
+                            <ngx-datatable class='data-table' [columnMode]="'force'" [scrollbarH]="true" [headerHeight]="50"
+                                [footerHeight]="50" [rowHeight]="50" [limit]="pageLimit" [rows]='reportData'
+                                #reportTable *ngIf="selectedReport">
+                                <ngx-datatable-column *ngFor="let column of columns" [name]="column.name"
+                                    [sortable]="false">
+                                    <ng-template let-value="value" let-row="row" ngx-datatable-cell-template>
+                                        {{ row[column.key] }}
+                                    </ng-template>
+                                </ngx-datatable-column>
+                            </ngx-datatable>
+                        </perfect-scrollbar>
+                    </app-card>
+                </ng-template>
+            </ngb-tab>
+        </ngb-tabset>
+    </div>
+</div>

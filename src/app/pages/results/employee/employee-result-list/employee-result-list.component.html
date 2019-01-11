@@ -1,0 +1,66 @@
+<div class="row">
+  <div class="col-sm-12 col-xl-5"></div>
+  <div class="col-sm-12 col-xl-2 text-right">
+    <div class="input-group input-group-primary">
+      <span class="input-group-prepend"><label class="input-group-text"><i class="icofont icofont-search"></i></label></span>
+      <input type="text" class="form-control" [(ngModel)]="employeeResultSearchQuery" placeholder="Search...">
+    </div>
+  </div>
+  <div class="col-sm-12 col-xl-2 text-right">
+    <select class="form-control form-control-primary" [(ngModel)]="employeeResultSelectedColumn">
+      <option *ngFor="let column of employeeResultSearchColumns" [ngValue]="column.key">{{ column.name }}</option>
+    </select>
+  </div>
+  <div class="col-sm-12 col-xl-2 text-right">
+    <select class="form-control form-control-primary" [(ngModel)]="employeeResultSearchFilterType">
+      <option value="contains">Contains</option>
+      <option value="startsWith">Starts With</option>
+      <option value="endsWith">Ends With</option>
+      <option value="exact">Exact</option>
+    </select>
+  </div>
+  <div class="col-sm-12 col-xl-1 text-right">
+    <button class="btn btn-primary ripple light" (click)="onSearch(employeeResultSelectedColumn, employeeResultSearchFilterType, employeeResultSearchQuery)">Search</button>
+  </div>
+</div>
+<perfect-scrollbar class="overflow-container" [style.width]="'100%'" [style.height]="'655px'" [config]="config">
+  <div class="row">
+    <div class="col-sm-12 col-xl-12 text-right">
+      <div class="pageCount" [ngClass]="empDetailsEditShow? 'hide-emp-list': ''">
+        <span class="totalreslt">Total employees: {{cachedEmployeeResults.length}}</span>
+        <span class="cont">
+          <span>Results per page:</span>
+          <span>
+            <a href="javascript:void(0)" [ngClass]="pageLimit == 10? 'pageLimitActive': ''" (click)="onChangePageLimit(10)">10</a>
+            <a href="javascript:void(0)" [ngClass]="pageLimit == 20? 'pageLimitActive': ''" (click)="onChangePageLimit(20)">20</a>
+            <a href="javascript:void(0)" [ngClass]="pageLimit == 50? 'pageLimitActive': ''" (click)="onChangePageLimit(50)">50</a>
+          </span>
+        </span>
+      </div>
+    </div>
+  </div>
+  <ngx-datatable #table class='data-table' [columnMode]="'force'" [scrollbarH]="true" [headerHeight]="50"
+    [footerHeight]="50" [rowHeight]="50" [rows]='employeeResults' [limit]="pageLimit" #employeeResultsTable>
+    <ngx-datatable-column *ngFor="let column of employeeResultcolumns" [name]="column.name" [sortable]="true" [prop]="column.key">
+      <ng-template let-value="value" let-row="row" ngx-datatable-cell-template>
+        <div [ngSwitch]="column.key">
+          <div *ngSwitchCase="'lastUpdated'">
+            {{row[column.key] | date: 'dd-MM-yyyy'}}
+          </div>
+          <div *ngSwitchCase="'employeeName'">
+            <span (click)="onViewEmployeeDetailsRequested(row)">{{row[column.key]}}</span>
+          </div>
+          <div class="manage-employee-tabs" *ngSwitchCase="'status'">
+            <i class="fas fa-check-circle userActive" *ngIf="row.status === 'Active'"></i>
+            <i class="fas fa-times-circle userInActive" *ngIf="row.status === 'In-active'"></i>
+            <i class="fas fa-minus-circle userRestricted" *ngIf="row.status === 'Restricted'"></i>
+            {{row[column.key]}}
+          </div>
+          <div *ngSwitchDefault>
+            {{row[column.key]}}
+          </div>
+        </div>
+      </ng-template>
+    </ngx-datatable-column>
+  </ngx-datatable>
+</perfect-scrollbar>

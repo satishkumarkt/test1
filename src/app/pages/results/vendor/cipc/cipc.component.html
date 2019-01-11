@@ -1,0 +1,200 @@
+<app-card [title]="'Vendor Results'" [personName]="vendor.vendorName" [showBreadcrumbs]="true" [titleIcon]="'icofont-presentation'"
+  [@fadeInOutTranslate] [cardOptionBlock]="false" class="m-t-15 cardBlock">
+  <button class="btn btn-inverse ripple light m-l-10" (click)="goBack()">Back</button>
+  <perfect-scrollbar>
+    <h4>Report for {{ vendor.vendorName }} - (Reg No.: {{ vendor.vendorRegNo }})</h4>
+    <div class="row">
+      <div class="col-md-6">
+      </div>
+      <div class="col-md-6">
+        <div class="box-container">
+          <div class="box-header">
+            Company Details
+          </div>
+          <div class="box-body">
+            <table>
+              <tr>
+                <td>Entity Name:</td>
+                <td>{{ vendor.vendorName }}</td>
+              </tr>
+              <tr>
+                <td>Entity Number:</td>
+                <td>{{ vendor.vendorRegNo }}</td>
+              </tr>
+              <tr>
+                <td>Entity Type:</td>
+                <td>FINANCIAL INTERMEDIATION INSURANCE, REAL ESTATE</td>
+              </tr>
+              <tr>
+                <td>Entity Status:</td>
+                <td>Dissolved</td>
+              </tr>
+              <tr>
+                <td>Start Date:</td>
+                <td>13-12-2016</td>
+              </tr>
+              <tr>
+                <td>Registration Date:</td>
+                <td>11-06-2015</td>
+              </tr>
+              <tr>
+                <td>Tax Number:</td>
+                <td>9898989989</td>
+              </tr>
+              <tr>
+                <td>Withdraw from public:</td>
+                <td>0</td>
+              </tr>
+              <tr>
+                <td>SIC Code:</td>
+                <td>8</td>
+              </tr>
+              <tr>
+                <td>Region Code:</td>
+                <td>5</td>
+              </tr>
+              <tr>
+                <td>Postal Address:</td>
+                <td>1 N. Cactus Ave. | P O BOX 4105</td>
+              </tr>
+              <tr>
+                <td>Registered Address:</td>
+                <td>4 Goldfield Rd. | P O BOX 4105</td>
+              </tr>
+              <tr>
+                <td>Country:</td>
+                <td>South Africa</td>
+              </tr>
+              <tr>
+                <td>City:</td>
+                <td>Newcastle</td>
+              </tr>
+            </table>
+          </div>
+          <div class="box-footer">
+            <table>
+              <tr>
+                <td></td>
+                <td>VIEW FULL REPORT</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-6">
+        <h4>Vendor directors are active employees</h4>
+        <div class="box-container">
+          <div class="box-header">
+            <table>
+              <tr>
+                <th>Vendor Name</th>
+                <th>Registered Name</th>
+              </tr>
+            </table>
+          </div>
+          <div class="box-body">
+            <table>
+              <tr>
+                <td>{{ vendor.vendorName }}</td>
+                <td>STANDARD BANK GROUP</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <h4>Vendor directors are directors of another active vendor</h4>
+        <div class="box-container">
+          <div class="box-header">
+            <table>
+              <tr>
+                <th>Registered Name</th>
+                <th>Director Status to Vendor</th>
+              </tr>
+            </table>
+          </div>
+          <div class="box-body">
+            <table>
+              <tr>
+                <td>{{ vendor.vendorName }}</td>
+                <td>STANDARD BANK GROUP</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <h4>Vendor name does not match registered name on CIPC</h4>
+        <ngx-datatable class='data-table' [columnMode]="'force'" [scrollbarH]="false" [headerHeight]="50"
+          [footerHeight]="0" [rowHeight]="50">
+          <ngx-datatable-column name="Common Company" [sortable]="false">
+            <ng-template ngx-datatable-cell-template>
+              <p>David Peter Smith</p>
+              <p>6011015023089</p>
+            </ng-template>
+          </ngx-datatable-column>
+          <ngx-datatable-column name="Vendor Status to Common Company" [sortable]="false">
+            <ng-template ngx-datatable-cell-template>
+              <i class="fas fa-check-circle userActive"></i>
+              Active
+            </ng-template>
+          </ngx-datatable-column>
+          <ngx-datatable-column name="Co Director Status to Common Company" [sortable]="false">
+            <ng-template ngx-datatable-cell-template>
+              <p>The Lion Match Company</p>
+              <p>8608250003087 - In Business</p>
+            </ng-template>
+          </ngx-datatable-column>
+          <ngx-datatable-column name="Co Director" [sortable]="false">
+            <ng-template ngx-datatable-cell-template>
+              Deceased
+            </ng-template>
+          </ngx-datatable-column>
+          <ngx-datatable-column name="Co Director Status to Conflict Vendor" [sortable]="false">
+            <ng-template ngx-datatable-cell-template>
+              <p>Vathasallum Reddy</p>
+              <p>6011015023089</p>
+            </ng-template>
+          </ngx-datatable-column>
+          <ngx-datatable-column name="Employee" [sortable]="false">
+            <ng-template ngx-datatable-cell-template>
+              Resigned
+            </ng-template>
+          </ngx-datatable-column>
+        </ngx-datatable>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <h4>All Passed Checks</h4>
+        <ngx-datatable class='data-table' [columnMode]="'force'" [scrollbarH]="false" [headerHeight]="50"
+          [footerHeight]="0" [rowHeight]="50">
+          <ngx-datatable-column name="Passed Message" [sortable]="false">
+            <ng-template ngx-datatable-cell-template>
+            </ng-template>
+          </ngx-datatable-column>
+        </ngx-datatable>
+      </div>
+    </div>
+  </perfect-scrollbar>
+</app-card>
+<div id="styleSelector" [ngClass]="configOpenRightBar">
+  <div class="selector-toggle">
+    <a href="javascript:" placement="left" class="ripple light" ngbTooltip=" Suggested Action on Alert" (click)="toggleRightbar()"></a>
+  </div>
+  <ul>
+    <li>
+      <p class="selector-title">Request Lastest BBE Certificate for Vendor</p>
+    </li>
+    <li>
+      <p class="selector-title">Suspend service with Vendor</p>
+    </li>
+    <li>
+      <p class="selector-title">Deactivate Vendor</p>
+    </li>
+  </ul>
+</div>

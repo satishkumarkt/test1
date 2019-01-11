@@ -1,0 +1,44 @@
+[
+    {
+        "fileId": 1,
+        "fileName": "Batch_ Sole Proprietors_Import - Copy.xlsx",
+        "dateOfImport": "12-13-2016 10:40:19",
+        "status": "Partial Completion - Full batch upload failed",
+        "noOfFailures": 1
+    },
+    {
+        "fileId": 2,
+        "fileName": "Batch_Copy of Sole Proprietorsr_Import.xlsx",
+        "dateOfImport": "11-08-2016 14:00:43",
+        "status": "Completed - Full batch uploaded succesfully",
+        "noOfFailures": 0
+    },
+    {
+        "fileId": 3,
+        "fileName": "Partnerships_Import - 20150922.xlsx",
+        "dateOfImport": "06-18-2016 22:20:14",
+        "status": "Completed - Full batch uploaded succesfully",
+        "noOfFailures": 0
+    },
+    {
+        "fileId": 4,
+        "fileName": "Batch_ Sole Proprietors.xlsx",
+        "dateOfImport": "09-04-2016 19:22:42",
+        "status": "Partial Completion - Full batch upload failed",
+        "noOfFailures": 2
+    },
+    {
+        "fileId": 5,
+        "fileName": "Partnerships_Import.xlsx",
+        "dateOfImport": "12-13-2016 10:40:19",
+        "status": "Partial Completion - Full batch upload failed",
+        "noOfFailures": 1
+    },
+    {
+        "fileId": 6,
+        "fileName": "Batch_Copy of ModifyAccount Experian.xlsx",
+        "dateOfImport": "12-13-2016- 10:40:19",
+        "status": "Completed - Full batch uploaded succesfullyd",
+        "noOfFailures": 0
+    }
+]

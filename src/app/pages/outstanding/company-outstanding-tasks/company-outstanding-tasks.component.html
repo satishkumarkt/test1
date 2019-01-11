@@ -1,0 +1,51 @@
+<div class="row">
+  <div class="col-sm-12 col-xl-5"></div>
+  <div class="col-sm-12 col-xl-2 text-right">
+    <div class="input-group input-group-primary">
+      <span class="input-group-prepend"><label class="input-group-text"><i class="icofont icofont-search"></i></label></span>
+      <input type="text" class="form-control" [(ngModel)]="searchQuery" placeholder="Search...">
+    </div>
+  </div>
+  <div class="col-sm-12 col-xl-2 text-right">
+    <select class="form-control form-control-primary" [(ngModel)]="selectedColumn">
+      <option *ngFor="let column of searchColumns" [ngValue]="column.key">{{ column.name }}</option>
+    </select>
+  </div>
+  <div class="col-sm-12 col-xl-2 text-right">
+    <select class="form-control form-control-primary" [(ngModel)]="filterType">
+      <option value="contains">Contains</option>
+      <option value="startsWith">Starts With</option>
+      <option value="endsWith">Ends With</option>
+      <option value="exact">Exact</option>
+    </select>
+  </div>
+  <div class="col-sm-12 col-xl-1 text-right">
+    <button class="btn btn-primary ripple light" (click)="onSearch(selectedColumn, filterType, searchQuery)">Search</button>
+  </div>
+</div>
+<perfect-scrollbar class="overflow-container" [style.width]="'100%'" [style.height]="'655px'" [config]="config">
+  <div class="row">
+    <div class="col-sm-12 col-xl-12 text-right">
+      <div class="pageCount">
+        <span class="totalreslt">Total employees: {{cachedCompanyOutstandingTasks.length}}</span>
+        <span class="cont">
+          <span>Results per page:</span>
+          <span>
+            <a href="javascript:void(0)" [ngClass]="pageLimit == 10? 'pageLimitActive': ''" (click)="onChangePageLimit(10)">10</a>
+            <a href="javascript:void(0)" [ngClass]="pageLimit == 20? 'pageLimitActive': ''" (click)="onChangePageLimit(20)">20</a>
+            <a href="javascript:void(0)" [ngClass]="pageLimit == 50? 'pageLimitActive': ''" (click)="onChangePageLimit(50)">50</a>
+          </span>
+        </span>
+      </div>
+    </div>
+  </div>
+  <ngx-datatable class='data-table' [columnMode]="'force'" [scrollbarH]="true" [headerHeight]="50" [footerHeight]="50"
+    [rowHeight]="50" [limit]="pageLimit" [rows]='companyOutstandingTasks' #companyOutstandingTaskTable>
+    <ngx-datatable-column *ngFor="let column of columns" [name]="column.name" [sortable]="true" [prop]="column.key">
+      <ng-template let-value="value" let-row="row" ngx-datatable-cell-template>
+
+        {{row[column.key]}}
+      </ng-template>
+    </ngx-datatable-column>
+  </ngx-datatable>
+</perfect-scrollbar>

@@ -1,0 +1,80 @@
+<h5>Personal Details</h5>
+<div [formGroup]='personalDetails'>
+  <div class="form-group row">
+    <label class="col-sm-4 col-form-label">First Name:</label>
+    <div class="col-sm-8">
+      <input type="text" class="form-control" id="firstName" placeholder="Enter First Name" formControlName="firstName">
+      <div class="messages text-danger" *ngIf="personalDetails.controls.firstName.errors?.required && personalDetails.controls.firstName.dirty">
+        Name can't be blank
+      </div>
+    </div>
+  </div>
+  <div class="form-group row">
+    <label class="col-sm-4 col-form-label">Surname:</label>
+    <div class="col-sm-8">
+      <input type="text" class="form-control" id="surname" formControlName="surname" placeholder="Enter Surname">
+    </div>
+  </div>
+  <div class="form-group row">
+    <label class="col-sm-4 col-form-label">Nationality:</label>
+    <div class="col-sm-8">
+      <ng-select [ngClass]="'ng-select'" [options]="nationalities" formControlName="nationality" id="nationality"> </ng-select>
+    </div>
+  </div>
+  <div class="form-group row">
+    <label class="col-sm-4 col-form-label">ID / Passport No:</label>
+    <div class="col-sm-8">
+      <input type="text" class="form-control" id="passportNo" placeholder="Enter Passport No" formControlName="passportNo">
+      <div class="messages text-danger" *ngIf="personalDetails.controls.passportNo.errors?.required && personalDetails.controls.passportNo.dirty">
+        Passport No can't be blank
+      </div>
+      <div class="messages text-danger" *ngIf="personalDetails.controls.passportNo.errors?.number">
+          Passport No must be a number
+        </div>
+    </div>
+  </div>
+  <div class="form-group row">
+    <label class="col-sm-4 col-form-label">Passport Issue Date:</label>
+    <div class="col-sm-8">
+      <div class="input-group">
+        <input class="form-control" placeholder="dd-mm-yyyy" name="dp" [(ngModel)]="modelCustomDay" ngbDatepicker [dayTemplate]="customDay" [markDisabled]="isDisabled" #dcd="ngbDatepicker" formControlName="passportIssueDate" date type="text" readonly>
+        <div class="input-group-append bg-default" (click)="dcd.toggle()">
+          <span class="input-group-text icofont icofont-ui-calendar"></span>
+        </div>
+      </div>
+      <div class="messages text-danger" *ngIf="personalDetails.controls.passportIssueDate.errors?.required && personalDetails.controls.passportIssueDate.dirty">
+        Passport Issue Date can't be blank
+      </div>
+    </div>
+    <ng-template #customDay let-date="date" let-currentMonth="currentMonth" let-selected="selected" let-disabled="disabled"
+      let-focused="focused">
+      <span class="custom-day" [class.focused]="focused" [class.bg-primary]="selected" [class.hidden]="date.month !== currentMonth"
+        [class.text-muted]="disabled">
+        {{ date.day }}
+      </span>
+    </ng-template>
+  </div>
+  <div class="form-group row">
+    <label class="col-sm-4 col-form-label">Passport Expiry Date:</label>
+    <div class="col-sm-8">
+      <div class="input-group">
+        <input class="form-control" placeholder="dd-mm-yyyy" name="dp" [(ngModel)]="modelPopup" ngbDatepicker #d="ngbDatepicker"
+          formControlName="passportExpiryDate" readonly>
+        <div class="input-group-append">
+          <span class="input-group-text" (click)="d.toggle()">
+            <i class="icofont icofont-ui-calendar"></i>
+          </span>
+        </div>
+      </div>
+      <div class="messages text-danger" *ngIf="personalDetails.controls.passportExpiryDate.errors?.required && personalDetails.controls.passportExpiryDate.dirty">
+        Passport Issue Date can't be blank
+      </div>
+    </div>
+  </div>
+  <div class="form-group row">
+    <label class="col-sm-4 col-form-label">Designation:</label>
+    <div class="col-sm-8">
+      <input type="text" class="form-control" placeholder="Enter Designation" formControlName="designation">
+    </div>
+  </div>
+</div>

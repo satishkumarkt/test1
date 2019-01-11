@@ -1,0 +1,62 @@
+[
+    {
+        "year": "2016-01-01",
+        "month": "January",
+        "noOfVendorsAdded": 4,
+        "noOfEmployeesAdded": 3
+    },
+    {
+        "year": "2016-02-01",
+        "month": "February",
+        "noOfVendorsAdded": 7,
+        "noOfEmployeesAdded": 2
+    },
+    {
+        "year": "2016-03-01",
+        "month": "March",
+        "noOfVendorsAdded": 2,
+        "noOfEmployeesAdded": 0
+    },
+    {
+        "year": "2016-04-01",
+        "month": "April",
+        "noOfVendorsAdded": 0,
+        "noOfEmployeesAdded": 7
+    },
+    {
+        "year": "2016-05-01",
+        "month": "May",
+        "noOfVendorsAdded": 5,
+        "noOfEmployeesAdded": 5
+    },
+    {
+        "year": "2015-01-01",
+        "month": "January",
+        "noOfVendorsAdded": 1,
+        "noOfEmployeesAdded": 3
+    },
+    {
+        "year": "2015-02-01",
+        "month": "February",
+        "noOfVendorsAdded": 3,
+        "noOfEmployeesAdded": 1
+    },
+    {
+        "year": "2015-03-01",
+        "month": "March",
+        "noOfVendorsAdded": 2,
+        "noOfEmployeesAdded": 0
+    },
+    {
+        "year": "2015-04-01",
+        "month": "April",
+        "noOfVendorsAdded": 0,
+        "noOfEmployeesAdded": 1
+    },
+    {
+        "year": "2015-05-01",
+        "month": "May",
+        "noOfVendorsAdded": 0,
+        "noOfEmployeesAdded": 1
+    }
+]

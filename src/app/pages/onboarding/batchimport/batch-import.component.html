@@ -1,0 +1,32 @@
+<div class="row manage-employee-tabs">
+  <div class="col-sm-12">
+    <ngb-tabset>
+      <ngb-tab title="Import Employees">
+        <ng-template ngbTabContent>
+          <app-card [title]="'Import Employees'" [showBreadcrumbs]="true" [titleIcon]="'fas fa-file-export'"
+            [@fadeInOutTranslate] [cardOptionBlock]="false" class="m-t-15 cardBlock">
+            <app-import-employees></app-import-employees>
+          </app-card>
+        </ng-template>
+      </ngb-tab>
+
+      <ngb-tab title="Import Vendors">
+        <ng-template ngbTabContent>
+          <app-card [title]="'Import Vendors'" [showBreadcrumbs]="true" [titleIcon]="'fas fa-file-export'"
+            [@fadeInOutTranslate] [cardOptionBlock]="false" class="m-t-15 cardBlock">
+            <app-import-vendors></app-import-vendors>
+          </app-card>
+        </ng-template>
+      </ngb-tab>
+
+      <ngb-tab title="Import Sole Proprietors / Partnerships">
+        <ng-template ngbTabContent>
+          <app-card [title]="'Import Sole Proprietors / Partnerships Sessions'" [showBreadcrumbs]="true" [titleIcon]="'fas fa-file-export'"
+            [@fadeInOutTranslate] [cardOptionBlock]="false" class="m-t-15 cardBlock">
+            <app-import-sole-proprietors></app-import-sole-proprietors>
+          </app-card>
+        </ng-template>
+      </ngb-tab>
+    </ngb-tabset>
+  </div>
+</div>

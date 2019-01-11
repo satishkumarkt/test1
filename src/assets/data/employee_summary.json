@@ -1,0 +1,50 @@
+[
+    {
+      "verificationType": "CIPC",
+      "result": "Completed",
+      "totalChecks": "5",
+      "passedChecks": "3",
+      "failedChecks": "2",
+      "outstandingChecks": "0"
+    },
+    {
+      "verificationType": "Restricted List",
+      "result": "Completed",
+      "totalChecks": "4",
+      "passedChecks": "4",
+      "failedChecks": "0",
+      "outstandingChecks": "0"
+    },
+    {
+      "verificationType": "SAFPS",
+      "result": "Pending",
+      "totalChecks": "1",
+      "passedChecks": "1",
+      "failedChecks": "0",
+      "outstandingChecks": "0"
+    },
+    {
+      "verificationType": "PERSAL",
+      "result": "Pending",
+      "totalChecks": "1",
+      "passedChecks": "1",
+      "failedChecks": "0",
+      "outstandingChecks": "0"
+    },
+    {
+      "verificationType": "Property",
+      "result": "Completed",
+      "totalChecks": "4",
+      "passedChecks": "4",
+      "failedChecks": "0",
+      "outstandingChecks": "0"
+    },
+    {
+      "verificationType": "Bank Verification",
+      "result": "Pending",
+      "totalChecks": "1",
+      "passedChecks": "0",
+      "failedChecks": "0",
+      "outstandingChecks": "1"
+    }
+  ]

@@ -1,0 +1,78 @@
+<div class="page-body navbar-page">
+  <div class="row">
+    <div class="col-sm-12">
+      <!-- Custom Dark Colors card start -->
+      <div class="card">
+        <div class="card-header">
+          <h5 class="page-title" (click)="openMyModal('effect-2')"><span class="pcoded-micon"><i class="fa fa-line-chart"></i><b
+                class="ng-tns-c2-0"></b></span>
+            <span class="p-title">
+              <app-pagetitle></app-pagetitle>
+            </span></h5>
+        </div>
+        <app-modal-animation [modalID]="'effect-2'" [modalClass]="'md-effect-2'">
+          <div class="modal-header">
+            <div class="modal-header-logo">
+              <img src="../../../assets/images/modal_logo.png" width="70px" height="auto" />
+            </div>
+            <ul>
+              <li><img src="../../../assets/images/logo.png" width="150px" height="auto" /></li>
+              <li><img src="../../../assets/images/security.png" width="25px" height="auto" /></li>
+            </ul>
+          </div>
+          <div class="modal-banner">
+            <div class="modal-banner-info">
+              <h2 class="modal-banner-header">EIUSMOD TEMPOR</h2>
+              <h2>LOREM IPSUM</h2>
+              <p class="modal-banner-content">Although the phrase is nonsense, it does have a long history. The phrase
+                has been used for several centuries by typographers to show the most distinctive features of their
+                fonts. It is used because the letters involved and the letter spacing in those combinations reveal, at
+                their best, the weight, design, and other important features of the typeface.</p>
+            </div>
+          </div>
+          <div>
+            <p>This is a modal window. You can do the following things with it:</p>
+            <ul>
+              <li><strong>Read:</strong> modal windows will probably tell you something important so don't forget to
+                read what they say.</li>
+              <li><strong>Look:</strong> a modal window enjoys a certain kind of attention; just look at it and
+                appreciate its presence.</li>
+              <li><strong>Close:</strong> click on the button below to close the modal.</li>
+            </ul>
+            <button (click)="closeMyModal($event)" class="btn btn-primary md-close">Close Me!!</button>
+          </div>
+          <button (click)="closeMyModal($event)" aria-label="Close" class="md-close-btn"><i class="icofont icofont-ui-close"></i></button>
+        </app-modal-animation>
+        <perfect-scrollbar class="overflow-container" [style.width]="'100%'" [style.height]="'812px'" [config]="config">
+          <div class="card-block">
+            <app-employee-vendor-pie-chart></app-employee-vendor-pie-chart>
+          </div>
+
+          <div class="card-block data-table-block">
+            <div class="row">
+              <div class="col-md-12 col-lg-6">
+                <app-card [title]="'Risk Areas'" [titleIcon]=" ">
+                  <ngx-datatable class="data-table table-responsive" [rows]="rowsBasic" [loadingIndicator]="loadingIndicator"
+                    [columns]="columns" [columnMode]="'standard'" [scrollbarH]="true" [headerHeight]="50" [rowHeight]="50"
+                    [reorderable]="reorderable">
+                  </ngx-datatable>
+                </app-card>
+              </div>
+              <div class="col-md-12 col-lg-6">
+                <app-card [title]="'Outstanding Task Overview'" [titleIcon]=" ">
+                  <ngx-datatable class="data-table table-responsive" [rows]="rowsBasic" [loadingIndicator]="loadingIndicator"
+                    [columns]="columns" [columnMode]="'standard'" [scrollbarH]="true" [headerHeight]="50" [rowHeight]="50"
+                    [reorderable]="reorderable">
+                  </ngx-datatable>
+                </app-card>
+              </div>
+
+            </div>
+          </div>
+
+        </perfect-scrollbar>
+      </div>
+      <!-- Custom Dark Colors card end -->
+    </div>
+  </div>
+</div>

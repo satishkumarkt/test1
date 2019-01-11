@@ -1,0 +1,41 @@
+<div class="row emp-list m-b-15">
+  <div class="col-sm-12 col-xl-6">
+
+  </div>
+  <div class="col-sm-12 col-xl-6 text-right tab-top-right-section">
+    <label class="custom-file">
+      <input type="file" ng2FileSelect [uploader]="uploader" class="custom-file-input">
+      <span class="custom-file-control"></span>
+    </label>
+    <button class="btn btn-primary ripple light" (click)="empDetailsUpdate()">Download Guideline</button>
+    <button class="btn btn-primary ripple light" (click)="empDetailsUpdate()">Download Template</button>
+  </div>
+</div>
+<perfect-scrollbar class="overflow-container" [style.width]="'100%'" [style.height]="'655px'" [config]="config">
+  <ngx-datatable #table class='data-table' [columnMode]="'force'" [scrollbarH]="true" [headerHeight]="50"
+    [footerHeight]="0" [rowHeight]="50" [rows]='employeeImportSessions' #solePropietorImportsTable>
+    <ngx-datatable-column *ngFor="let column of empImportSessionColumns" [name]="column.name" [sortable]="true"
+      [prop]="column.key">
+      <ng-template let-value="value" let-row="row" ngx-datatable-cell-template>
+        <div [ngSwitch]="column.key">
+          <div *ngSwitchCase="'dateOfImport'">
+            {{row[column.key] | date: 'dd-MM-yyyy hh:mm:ss'}}
+          </div>
+          <div *ngSwitchCase="'status'">
+            <i class="fas fa-check-circle userActive" *ngIf="row.noOfFailures == 0"></i>
+            <i class="fas fa-times-circle userInActive" *ngIf="row.noOfFailures >= 1"></i>
+            {{row[column.key]}}
+          </div>
+          <div *ngSwitchDefault>
+            {{row[column.key]}}
+          </div>
+        </div>
+      </ng-template>
+    </ngx-datatable-column>
+    <ngx-datatable-column name="Notes">
+      <ng-template>
+
+      </ng-template>
+    </ngx-datatable-column>
+  </ngx-datatable>
+</perfect-scrollbar>

@@ -1,0 +1,9 @@
+<ng-container *ngFor="let breadcrumb of breadcrumbs; let last = last">
+    <ng-container *ngIf="breadcrumb.status && last">
+        <ng-container *ngIf="last">
+            <ng-container *ngFor="let breadcrumb of breadcrumbs; let last = last">
+                <ng-container *ngIf="last">{{ breadcrumb.label }}</ng-container>
+            </ng-container>
+        </ng-container>
+    </ng-container>
+</ng-container>

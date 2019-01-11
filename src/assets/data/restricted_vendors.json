@@ -1,0 +1,1094 @@
+[
+    {
+        "vendorName": "A & R Civils",
+        "registrationNo": "8608250003087",
+        "group": " ",
+        "uniqueIdentifier": " ",
+        "dateCreated": "04-09-2016- 07:50:46",
+        "dateLastUpdated": "04-09-2016- 07:50:46",
+        "status": "Active",
+        "id": 1
+        
+    },
+    {
+        "vendorName": "A & R Engineering & Mining Supplies",
+        "registrationNo": "8608250003087",
+        "group": "  ",
+        "uniqueIdentifier": " ",
+        "dateCreated": "04-09-2016- 07:50:46",
+        "dateLastUpdated": "04-09-2016- 07:50:46",
+        "status": "Active",         
+        "id": 2
+        
+    },
+    {
+        "vendorName": "ABB Holdings (Pty) Ltd",
+        "registrationNo": "8608250003087",
+        "group": "  ",
+        "uniqueIdentifier": " ",
+        "dateCreated": "04-09-2016- 07:50:46",
+        "dateLastUpdated": "04-09-2016- 07:50:46",
+        "status": "Restricted",         
+        "id": 3
+        
+    },
+    {
+        "vendorName": "Abbott Laboratories SA",
+        "registrationNo": "8608250003087",
+        "group": "  ",
+        "uniqueIdentifier": " ",
+        "dateCreated": "04-09-2016- 07:50:46",
+        "dateLastUpdated": "04-09-2016- 07:50:46",
+        "status": "In-active",         
+        "id": 4
+        
+    },
+    {
+        "vendorName": "Adcorp holdings",
+        "registrationNo": "8608250003087",
+        "group": "  ",
+        "uniqueIdentifier": " ",
+        "dateCreated": "04-09-2016- 07:50:46",
+        "dateLastUpdated": "04-09-2016- 07:50:46",
+        "status": "Restricted",         
+        "id": 5
+        
+    },
+    {
+        "vendorName": "Aerontec",
+        "registrationNo": "8608250003087",
+        "group": "  ",
+        "uniqueIdentifier": " ",
+        "dateCreated": "04-09-2016- 07:50:46",
+        "dateLastUpdated": "04-09-2016- 07:50:46",
+        "status": "In-active",         
+        "id": 6
+        
+    },
+    {
+        "vendorName": "Africa Meeting Reading",
+        "registrationNo": "8608250003087",
+        "group": "  ",
+        "uniqueIdentifier": " ",
+        "dateCreated": "04-09-2016- 07:50:46",
+        "dateLastUpdated": "04-09-2016- 07:50:46",
+        "status": "In-active",         
+        "id": 7
+        
+    },
+    {
+        "vendorName": "African Carbon Union",
+        "registrationNo": "8608250003087",
+        "group": "  ",
+        "uniqueIdentifier": " ",
+        "dateCreated": "04-09-2016- 07:50:46",
+        "dateLastUpdated": "04-09-2016- 07:50:46",
+        "status": "Active",         
+        "id": 8
+        
+    },
+    {
+        "vendorName": "African Explosives",
+        "registrationNo": "8608250003087",
+        "group": "  ",
+        "uniqueIdentifier": " ",
+        "dateCreated": "04-09-2016- 07:50:46",
+        "dateLastUpdated": "04-09-2016- 07:50:46",
+        "status": "Active",         
+        "id": 9
+        
+    },
+    {
+        "vendorName": "Agilent Technologies",
+        "registrationNo": "8608250003087",
+        "group": " ",
+        "uniqueIdentifier": " ",
+        "dateCreated": "03-09-2016- 22:43:00",
+        "dateLastUpdated": "04-09-2016- 07:50:46",
+        "status": "Restricted",         
+        "id":10
+        
+    },
+    {
+        "vendorName": "A & R Civils",
+        "registrationNo": "8608250003087",
+        "group": " ",
+        "uniqueIdentifier": " ",
+        "dateCreated": "04-09-2016- 07:50:46",
+        "dateLastUpdated": "04-09-2016- 07:50:46",
+        "status": "Active",         
+        "id": 11
+        
+    },
+    {
+        "vendorName": "A & R Engineering & Mining Supplies",
+        "registrationNo": "8608250003087",
+        "group": "  ",
+        "uniqueIdentifier": " ",
+        "dateCreated": "04-09-2016- 07:50:46",
+        "dateLastUpdated": "04-09-2016- 07:50:46",
+        "status": "Active",         
+        "id":12
+        
+    },
+    {
+        "vendorName": "ABB Holdings (Pty) Ltd",
+        "registrationNo": "8608250003087",
+        "group": "  ",
+        "uniqueIdentifier": " ",
+        "dateCreated": "04-09-2016- 07:50:46",
+        "dateLastUpdated": "04-09-2016- 07:50:46",
+        "status": "Restricted",         
+        "id":13
+        
+    },
+    {
+        "vendorName": "Abbott Laboratories SA",
+        "registrationNo": "8608250003087",
+        "group": "  ",
+        "uniqueIdentifier": " ",
+        "dateCreated": "04-09-2016- 07:50:46",
+        "dateLastUpdated": "04-09-2016- 07:50:46",
+        "status": "In-active",         
+        "id":14
+        
+    },
+    {
+        "vendorName": "Adcorp holdings",
+        "registrationNo": "8608250003087",
+        "group": "  ",
+        "uniqueIdentifier": " ",
+        "dateCreated": "04-09-2016- 07:50:46",
+        "dateLastUpdated": "04-09-2016- 07:50:46",
+        "status": "Restricted",         
+        "id":15
+        
+    },
+    {
+        "vendorName": "Aerontec",
+        "registrationNo": "8608250003087",
+        "group": "  ",
+        "uniqueIdentifier": " ",
+        "dateCreated": "04-09-2016- 07:50:46",
+        "dateLastUpdated": "04-09-2016- 07:50:46",
+        "status": "In-active",         
+        "id":16
+        
+    },
+    {
+        "vendorName": "Africa Meeting Reading Testing",
+        "registrationNo": "8608250003087",
+        "group": "  ",
+        "uniqueIdentifier": " ",
+        "dateCreated": "04-09-2016- 07:50:46",
+        "dateLastUpdated": "04-09-2016- 07:50:46",
+        "status": "In-active",         
+        "id":17
+        
+    },
+    {
+        "vendorName": "African Carbon Union",
+        "registrationNo": "8608250003087",
+        "group": "  ",
+        "uniqueIdentifier": " ",
+        "dateCreated": "04-09-2016- 07:50:46",
+        "dateLastUpdated": "04-09-2016- 07:50:46",
+        "status": "Active",         
+        "id":18
+        
+    },
+    {
+        "vendorName": "African Explosives",
+        "registrationNo": "8608250003087",
+        "group": "  ",
+        "uniqueIdentifier": " ",
+        "dateCreated": "04-09-2016- 07:50:46",
+        "dateLastUpdated": "04-09-2016- 07:50:46",
+        "status": "Active",         
+        "id":19
+        
+    },
+    {
+        "vendorName": "Agilent Technologies",
+        "registrationNo": "8608250003087",
+        "group": " ",
+        "uniqueIdentifier": " ",
+        "dateCreated": "03-09-2016- 22:43:00",
+        "dateLastUpdated": "04-09-2016- 07:50:46",
+        "status": "Restricted",         
+        "id":20
+        
+    },
+    {
+        "vendorName": "A & R Civils",
+        "registrationNo": "8608250003087",
+        "group": " ",
+        "uniqueIdentifier": " ",
+        "dateCreated": "04-09-2016- 07:50:46",
+        "dateLastUpdated": "04-09-2016- 07:50:46",
+        "status": "Active",         
+        "id":21
+        
+    },
+    {
+        "vendorName": "A & R Engineering & Mining Supplies",
+        "registrationNo": "8608250003087",
+        "group": "  ",
+        "uniqueIdentifier": " ",
+        "dateCreated": "04-09-2016- 07:50:46",
+        "dateLastUpdated": "04-09-2016- 07:50:46",
+        "status": "Active",         
+        "id":22
+        
+    },
+    {
+        "vendorName": "ABB Holdings (Pty) Ltd",
+        "registrationNo": "8608250003087",
+        "group": "  ",
+        "uniqueIdentifier": " ",
+        "dateCreated": "04-09-2016- 07:50:46",
+        "dateLastUpdated": "04-09-2016- 07:50:46",
+        "status": "Restricted",         
+        "id":23
+        
+    },
+    {
+        "vendorName": "Abbott Laboratories SA",
+        "registrationNo": "8608250003087",
+        "group": "  ",
+        "uniqueIdentifier": " ",
+        "dateCreated": "04-09-2016- 07:50:46",
+        "dateLastUpdated": "04-09-2016- 07:50:46",
+        "status": "In-active",         
+        "id":24
+        
+    },
+    {
+        "vendorName": "Adcorp holdings",
+        "registrationNo": "8608250003087",
+        "group": "  ",
+        "uniqueIdentifier": " ",
+        "dateCreated": "04-09-2016- 07:50:46",
+        "dateLastUpdated": "04-09-2016- 07:50:46",
+        "status": "Restricted",         
+        "id":25
+        
+    },
+    {
+        "vendorName": "Aerontec",
+        "registrationNo": "8608250003087",
+        "group": "  ",
+        "uniqueIdentifier": " ",
+        "dateCreated": "04-09-2016- 07:50:46",
+        "dateLastUpdated": "04-09-2016- 07:50:46",
+        "status": "In-active",         
+        "id":26
+        
+    },
+    {
+        "vendorName": "Africa Meeting Reading",
+        "registrationNo": "8608250003087",
+        "group": "  ",
+        "uniqueIdentifier": " ",
+        "dateCreated": "04-09-2016- 07:50:46",
+        "dateLastUpdated": "04-09-2016- 07:50:46",
+        "status": "In-active",         
+        "id":27
+        
+    },
+    {
+        "vendorName": "African Carbon Union",
+        "registrationNo": "8608250003087",
+        "group": "  ",
+        "uniqueIdentifier": " ",
+        "dateCreated": "04-09-2016- 07:50:46",
+        "dateLastUpdated": "04-09-2016- 07:50:46",
+        "status": "Active",         
+        "id":28
+        
+    },
+    {
+        "vendorName": "African Explosives",
+        "registrationNo": "8608250003087",
+        "group": "  ",
+        "uniqueIdentifier": " ",
+        "dateCreated": "04-09-2016- 07:50:46",
+        "dateLastUpdated": "04-09-2016- 07:50:46",
+        "status": "Active",         
+        "id":29
+        
+    },
+    {
+        "vendorName": "Agilent Technologies",
+        "registrationNo": "8608250003087",
+        "group": " ",
+        "uniqueIdentifier": " ",
+        "dateCreated": "03-09-2016- 22:43:00",
+        "dateLastUpdated": "04-09-2016- 07:50:46",
+        "status": "Restricted",         
+        "id":30
+        
+    },
+    {
+        "vendorName": "A & R Civils",
+        "registrationNo": "8608250003087",
+        "group": " ",
+        "uniqueIdentifier": " ",
+        "dateCreated": "04-09-2016- 07:50:46",
+        "dateLastUpdated": "04-09-2016- 07:50:46",
+        "status": "Active",         
+        "id":31
+        
+    },
+    {
+        "vendorName": "A & R Engineering & Mining Supplies",
+        "registrationNo": "8608250003087",
+        "group": "  ",
+        "uniqueIdentifier": " ",
+        "dateCreated": "04-09-2016- 07:50:46",
+        "dateLastUpdated": "04-09-2016- 07:50:46",
+        "status": "Active",         
+        "id":32
+        
+    },
+    {
+        "vendorName": "ABB Holdings (Pty) Ltd",
+        "registrationNo": "8608250003087",
+        "group": "  ",
+        "uniqueIdentifier": " ",
+        "dateCreated": "04-09-2016- 07:50:46",
+        "dateLastUpdated": "04-09-2016- 07:50:46",
+        "status": "Restricted",         
+        "id":33
+        
+    },
+    {
+        "vendorName": "Abbott Laboratories SA",
+        "registrationNo": "8608250003087",
+        "group": "  ",
+        "uniqueIdentifier": " ",
+        "dateCreated": "04-09-2016- 07:50:46",
+        "dateLastUpdated": "04-09-2016- 07:50:46",
+        "status": "In-active",        
+        "id":34
+        
+    },
+    {
+        "vendorName": "Adcorp holdings",
+        "registrationNo": "8608250003087",
+        "group": "  ",
+        "uniqueIdentifier": " ",
+        "dateCreated": "04-09-2016- 07:50:46",
+        "dateLastUpdated": "04-09-2016- 07:50:46",
+        "status": "Restricted",         
+        "id":35
+        
+    },
+    {
+        "vendorName": "Aerontec",
+        "registrationNo": "8608250003087",
+        "group": "  ",
+        "uniqueIdentifier": " ",
+        "dateCreated": "04-09-2016- 07:50:46",
+        "dateLastUpdated": "04-09-2016- 07:50:46",
+        "status": "In-active",         
+        "id":36
+        
+    },
+    {
+        "vendorName": "Africa Meeting Reading",
+        "registrationNo": "8608250003087",
+        "group": "  ",
+        "uniqueIdentifier": " ",
+        "dateCreated": "04-09-2016- 07:50:46",
+        "dateLastUpdated": "04-09-2016- 07:50:46",
+        "status": "In-active",         
+        "id":37
+        
+    },
+    {
+        "vendorName": "African Carbon Union",
+        "registrationNo": "8608250003087",
+        "group": "  ",
+        "uniqueIdentifier": " ",
+        "dateCreated": "04-09-2016- 07:50:46",
+        "dateLastUpdated": "04-09-2016- 07:50:46",
+        "status": "Active",         
+        "id":38
+        
+    },
+    {
+        "vendorName": "African Explosives",
+        "registrationNo": "8608250003087",
+        "group": "  ",
+        "uniqueIdentifier": " ",
+        "dateCreated": "04-09-2016- 07:50:46",
+        "dateLastUpdated": "04-09-2016- 07:50:46",
+        "status": "Active",         
+        "id":39
+        
+    },
+    {
+        "vendorName": "Agilent Technologies",
+        "registrationNo": "8608250003087",
+        "group": " ",
+        "uniqueIdentifier": " ",
+        "dateCreated": "03-09-2016- 22:43:00",
+        "dateLastUpdated": "04-09-2016- 07:50:46",
+        "status": "Restricted",         
+        "id":40
+        
+    },
+    {
+        "vendorName": "A & R Civils",
+        "registrationNo": "8608250003087",
+        "group": " ",
+        "uniqueIdentifier": " ",
+        "dateCreated": "04-09-2016- 07:50:46",
+        "dateLastUpdated": "04-09-2016- 07:50:46",
+        "status": "Active",         
+        "id":41
+        
+    },
+    {
+        "vendorName": "A & R Engineering & Mining Supplies",
+        "registrationNo": "8608250003087",
+        "group": "  ",
+        "uniqueIdentifier": " ",
+        "dateCreated": "04-09-2016- 07:50:46",
+        "dateLastUpdated": "04-09-2016- 07:50:46",
+        "status": "Active",         
+        "id":42
+        
+    },
+    {
+        "vendorName": "ABB Holdings (Pty) Ltd",
+        "registrationNo": "8608250003087",
+        "group": "  ",
+        "uniqueIdentifier": " ",
+        "dateCreated": "04-09-2016- 07:50:46",
+        "dateLastUpdated": "04-09-2016- 07:50:46",
+        "status": "Restricted",         
+        "id":43
+        
+    },
+    {
+        "vendorName": "Abbott Laboratories SA",
+        "registrationNo": "8608250003087",
+        "group": "  ",
+        "uniqueIdentifier": " ",
+        "dateCreated": "04-09-2016- 07:50:46",
+        "dateLastUpdated": "04-09-2016- 07:50:46",
+        "status": "In-active",         
+        "id":44
+        
+    },
+    {
+        "vendorName": "Adcorp holdings",
+        "registrationNo": "8608250003087",
+        "group": "  ",
+        "uniqueIdentifier": " ",
+        "dateCreated": "04-09-2016- 07:50:46",
+        "dateLastUpdated": "04-09-2016- 07:50:46",
+        "status": "Restricted",         
+        "id":45
+        
+    },
+    {
+        "vendorName": "Aerontec",
+        "registrationNo": "8608250003087",
+        "group": "  ",
+        "uniqueIdentifier": " ",
+        "dateCreated": "04-09-2016- 07:50:46",
+        "dateLastUpdated": "04-09-2016- 07:50:46",
+        "status": "In-active",         
+        "id":46
+        
+    },
+    {
+        "vendorName": "Africa Meeting Reading",
+        "registrationNo": "8608250003087",
+        "group": "  ",
+        "uniqueIdentifier": " ",
+        "dateCreated": "04-09-2016- 07:50:46",
+        "dateLastUpdated": "04-09-2016- 07:50:46",
+        "status": "In-active",         
+        "id":47
+        
+    },
+    {
+        "vendorName": "African Carbon Union",
+        "registrationNo": "8608250003087",
+        "group": "  ",
+        "uniqueIdentifier": " ",
+        "dateCreated": "04-09-2016- 07:50:46",
+        "dateLastUpdated": "04-09-2016- 07:50:46",
+        "status": "Active",         
+        "id":48
+        
+    },
+    {
+        "vendorName": "African Explosives",
+        "registrationNo": "8608250003087",
+        "group": "  ",
+        "uniqueIdentifier": " ",
+        "dateCreated": "04-09-2016- 07:50:46",
+        "dateLastUpdated": "04-09-2016- 07:50:46",
+        "status": "Active",         
+        "id":49
+        
+    },
+    {
+        "vendorName": "Agilent Technologies",
+        "registrationNo": "8608250003087",
+        "group": " ",
+        "uniqueIdentifier": " ",
+        "dateCreated": "03-09-2016- 22:43:00",
+        "dateLastUpdated": "04-09-2016- 07:50:46",
+        "status": "Restricted",         
+        "id":50
+        
+    },
+    {
+        "vendorName": "A & R Civils",
+        "registrationNo": "8608250003087",
+        "group": " ",
+        "uniqueIdentifier": " ",
+        "dateCreated": "04-09-2016- 07:50:46",
+        "dateLastUpdated": "04-09-2016- 07:50:46",
+        "status": "Active",         
+        "id":51
+        
+    },
+    {
+        "vendorName": "A & R Engineering & Mining Supplies",
+        "registrationNo": "8608250003087",
+        "group": "  ",
+        "uniqueIdentifier": " ",
+        "dateCreated": "04-09-2016- 07:50:46",
+        "dateLastUpdated": "04-09-2016- 07:50:46",
+        "status": "Active",         
+        "id":52
+        
+    },
+    {
+        "vendorName": "ABB Holdings (Pty) Ltd",
+        "registrationNo": "8608250003087",
+        "group": "  ",
+        "uniqueIdentifier": " ",
+        "dateCreated": "04-09-2016- 07:50:46",
+        "dateLastUpdated": "04-09-2016- 07:50:46",
+        "status": "Restricted",         
+        "id":53
+        
+    },
+    {
+        "vendorName": "Abbott Laboratories SA",
+        "registrationNo": "8608250003087",
+        "group": "  ",
+        "uniqueIdentifier": " ",
+        "dateCreated": "04-09-2016- 07:50:46",
+        "dateLastUpdated": "04-09-2016- 07:50:46",
+        "status": "In-active",         
+        "id":54
+        
+    },
+    {
+        "vendorName": "Adcorp holdings",
+        "registrationNo": "8608250003087",
+        "group": "  ",
+        "uniqueIdentifier": " ",
+        "dateCreated": "04-09-2016- 07:50:46",
+        "dateLastUpdated": "04-09-2016- 07:50:46",
+        "status": "Restricted",         
+        "id":55
+        
+    },
+    {
+        "vendorName": "Aerontec",
+        "registrationNo": "8608250003087",
+        "group": "  ",
+        "uniqueIdentifier": " ",
+        "dateCreated": "04-09-2016- 07:50:46",
+        "dateLastUpdated": "04-09-2016- 07:50:46",
+        "status": "In-active",         
+        "id":56
+        
+    },
+    {
+        "vendorName": "Africa Meeting Reading",
+        "registrationNo": "8608250003087",
+        "group": "  ",
+        "uniqueIdentifier": " ",
+        "dateCreated": "04-09-2016- 07:50:46",
+        "dateLastUpdated": "04-09-2016- 07:50:46",
+        "status": "In-active",         
+        "id":57
+        
+    },
+    {
+        "vendorName": "African Carbon Union",
+        "registrationNo": "8608250003087",
+        "group": "  ",
+        "uniqueIdentifier": " ",
+        "dateCreated": "04-09-2016- 07:50:46",
+        "dateLastUpdated": "04-09-2016- 07:50:46",
+        "status": "Active",         
+        "id":58
+        
+    },
+    {
+        "vendorName": "African Explosives",
+        "registrationNo": "8608250003087",
+        "group": "  ",
+        "uniqueIdentifier": " ",
+        "dateCreated": "04-09-2016- 07:50:46",
+        "dateLastUpdated": "04-09-2016- 07:50:46",
+        "status": "Active",         
+        "id":59
+        
+    },
+    {
+        "vendorName": "Agilent Technologies",
+        "registrationNo": "8608250003087",
+        "group": " ",
+        "uniqueIdentifier": " ",
+        "dateCreated": "03-09-2016- 22:43:00",
+        "dateLastUpdated": "04-09-2016- 07:50:46",
+        "status": "Restricted",         
+        "id":60
+        
+    },
+    {
+        "vendorName": "A & R Civils",
+        "registrationNo": "8608250003087",
+        "group": " ",
+        "uniqueIdentifier": " ",
+        "dateCreated": "04-09-2016- 07:50:46",
+        "dateLastUpdated": "04-09-2016- 07:50:46",
+        "status": "Active",         
+        "id":61
+        
+    },
+    {
+        "vendorName": "A & R Engineering & Mining Supplies",
+        "registrationNo": "8608250003087",
+        "group": "  ",
+        "uniqueIdentifier": " ",
+        "dateCreated": "04-09-2016- 07:50:46",
+        "dateLastUpdated": "04-09-2016- 07:50:46",
+        "status": "Active",         
+        "id":62
+        
+    },
+    {
+        "vendorName": "ABB Holdings (Pty) Ltd",
+        "registrationNo": "8608250003087",
+        "group": "  ",
+        "uniqueIdentifier": " ",
+        "dateCreated": "04-09-2016- 07:50:46",
+        "dateLastUpdated": "04-09-2016- 07:50:46",
+        "status": "Restricted",         
+        "id":63
+        
+    },
+    {
+        "vendorName": "Abbott Laboratories SA",
+        "registrationNo": "8608250003087",
+        "group": "  ",
+        "uniqueIdentifier": " ",
+        "dateCreated": "04-09-2016- 07:50:46",
+        "dateLastUpdated": "04-09-2016- 07:50:46",
+        "status": "In-active",         
+        "id":64
+        
+    },
+    {
+        "vendorName": "Adcorp holdings",
+        "registrationNo": "8608250003087",
+        "group": "  ",
+        "uniqueIdentifier": " ",
+        "dateCreated": "04-09-2016- 07:50:46",
+        "dateLastUpdated": "04-09-2016- 07:50:46",
+        "status": "Restricted",         
+        "id":65
+        
+    },
+    {
+        "vendorName": "Aerontec",
+        "registrationNo": "8608250003087",
+        "group": "  ",
+        "uniqueIdentifier": " ",
+        "dateCreated": "04-09-2016- 07:50:46",
+        "dateLastUpdated": "04-09-2016- 07:50:46",
+        "status": "In-active",         
+        "id":66
+        
+    },
+    {
+        "vendorName": "Africa Meeting Reading",
+        "registrationNo": "8608250003087",
+        "group": "  ",
+        "uniqueIdentifier": " ",
+        "dateCreated": "04-09-2016- 07:50:46",
+        "dateLastUpdated": "04-09-2016- 07:50:46",
+        "status": "In-active",         
+        "id":67
+        
+    },
+    {
+        "vendorName": "African Carbon Union",
+        "registrationNo": "8608250003087",
+        "group": "  ",
+        "uniqueIdentifier": " ",
+        "dateCreated": "04-09-2016- 07:50:46",
+        "dateLastUpdated": "04-09-2016- 07:50:46",
+        "status": "Active",         
+        "id":68
+        
+    },
+    {
+        "vendorName": "African Explosives",
+        "registrationNo": "8608250003087",
+        "group": "  ",
+        "uniqueIdentifier": " ",
+        "dateCreated": "04-09-2016- 07:50:46",
+        "dateLastUpdated": "04-09-2016- 07:50:46",
+        "status": "Active",         
+        "id":69
+        
+    },
+    {
+        "vendorName": "Agilent Technologies",
+        "registrationNo": "8608250003087",
+        "group": " ",
+        "uniqueIdentifier": " ",
+        "dateCreated": "03-09-2016- 22:43:00",
+        "dateLastUpdated": "04-09-2016- 07:50:46",
+        "status": "Restricted",         
+        "id":70
+        
+    },
+    {
+        "vendorName": "A & R Civils",
+        "registrationNo": "8608250003087",
+        "group": " ",
+        "uniqueIdentifier": " ",
+        "dateCreated": "04-09-2016- 07:50:46",
+        "dateLastUpdated": "04-09-2016- 07:50:46",
+        "status": "Active",         
+        "id":71
+        
+    },
+    {
+        "vendorName": "A & R Engineering & Mining Supplies",
+        "registrationNo": "8608250003087",
+        "group": "  ",
+        "uniqueIdentifier": " ",
+        "dateCreated": "04-09-2016- 07:50:46",
+        "dateLastUpdated": "04-09-2016- 07:50:46",
+        "status": "Active",         
+        "id":72
+        
+    },
+    {
+        "vendorName": "ABB Holdings (Pty) Ltd",
+        "registrationNo": "8608250003087",
+        "group": "  ",
+        "uniqueIdentifier": " ",
+        "dateCreated": "04-09-2016- 07:50:46",
+        "dateLastUpdated": "04-09-2016- 07:50:46",
+        "status": "Restricted",         
+        "id":73
+        
+    },
+    {
+        "vendorName": "Abbott Laboratories SA",
+        "registrationNo": "8608250003087",
+        "group": "  ",
+        "uniqueIdentifier": " ",
+        "dateCreated": "04-09-2016- 07:50:46",
+        "dateLastUpdated": "04-09-2016- 07:50:46",
+        "status": "In-active",         
+        "id":74
+        
+    },
+    {
+        "vendorName": "Adcorp holdings",
+        "registrationNo": "8608250003087",
+        "group": "  ",
+        "uniqueIdentifier": " ",
+        "dateCreated": "04-09-2016- 07:50:46",
+        "dateLastUpdated": "04-09-2016- 07:50:46",
+        "status": "Restricted",         
+        "id":75
+        
+    },
+    {
+        "vendorName": "Aerontec",
+        "registrationNo": "8608250003087",
+        "group": "  ",
+        "uniqueIdentifier": " ",
+        "dateCreated": "04-09-2016- 07:50:46",
+        "dateLastUpdated": "04-09-2016- 07:50:46",
+        "status": "In-active",         
+        "id":76
+        
+    },
+    {
+        "vendorName": "Africa Meeting Reading",
+        "registrationNo": "8608250003087",
+        "group": "  ",
+        "uniqueIdentifier": " ",
+        "dateCreated": "04-09-2016- 07:50:46",
+        "dateLastUpdated": "04-09-2016- 07:50:46",
+        "status": "In-active",         
+        "id":77
+        
+    },
+    {
+        "vendorName": "African Carbon Union",
+        "registrationNo": "8608250003087",
+        "group": "  ",
+        "uniqueIdentifier": " ",
+        "dateCreated": "04-09-2016- 07:50:46",
+        "dateLastUpdated": "04-09-2016- 07:50:46",
+        "status": "Active",         
+        "id":78
+        
+    },
+    {
+        "vendorName": "African Explosives",
+        "registrationNo": "8608250003087",
+        "group": "  ",
+        "uniqueIdentifier": " ",
+        "dateCreated": "04-09-2016- 07:50:46",
+        "dateLastUpdated": "04-09-2016- 07:50:46",
+        "status": "Active",         
+        "id":79
+        
+    },
+    {
+        "vendorName": "Agilent Technologies",
+        "registrationNo": "8608250003087",
+        "group": " ",
+        "uniqueIdentifier": " ",
+        "dateCreated": "03-09-2016- 22:43:00",
+        "dateLastUpdated": "04-09-2016- 07:50:46",
+        "status": "Restricted",         
+        "id":80
+        
+    },
+    {
+        "vendorName": "A & R Civils",
+        "registrationNo": "8608250003087",
+        "group": " ",
+        "uniqueIdentifier": " ",
+        "dateCreated": "04-09-2016- 07:50:46",
+        "dateLastUpdated": "04-09-2016- 07:50:46",
+        "status": "Active",         
+        "id":81
+        
+    },
+    {
+        "vendorName": "A & R Engineering & Mining Supplies",
+        "registrationNo": "8608250003087",
+        "group": "  ",
+        "uniqueIdentifier": " ",
+        "dateCreated": "04-09-2016- 07:50:46",
+        "dateLastUpdated": "04-09-2016- 07:50:46",
+        "status": "Active",         
+        "id":82
+        
+    },
+    {
+        "vendorName": "ABB Holdings (Pty) Ltd",
+        "registrationNo": "8608250003087",
+        "group": "  ",
+        "uniqueIdentifier": " ",
+        "dateCreated": "04-09-2016- 07:50:46",
+        "dateLastUpdated": "04-09-2016- 07:50:46",
+        "status": "Restricted",         
+        "id":83
+        
+    },
+    {
+        "vendorName": "Abbott Laboratories SA",
+        "registrationNo": "8608250003087",
+        "group": "  ",
+        "uniqueIdentifier": " ",
+        "dateCreated": "04-09-2016- 07:50:46",
+        "dateLastUpdated": "04-09-2016- 07:50:46",
+        "status": "In-active",         
+        "id":84
+        
+    },
+    {
+        "vendorName": "Adcorp holdings",
+        "registrationNo": "8608250003087",
+        "group": "  ",
+        "uniqueIdentifier": " ",
+        "dateCreated": "04-09-2016- 07:50:46",
+        "dateLastUpdated": "04-09-2016- 07:50:46",
+        "status": "Restricted",         
+        "id":85
+        
+    },
+   
+    {
+        "vendorName": "Africa Meeting Reading",
+        "registrationNo": "8608250003087",
+        "group": "  ",
+        "uniqueIdentifier": " ",
+        "dateCreated": "04-09-2016- 07:50:46",
+        "dateLastUpdated": "04-09-2016- 07:50:46",
+        "status": "In-active",         
+        "id":86
+        
+    },
+    {
+        "vendorName": "African Carbon Union",
+        "registrationNo": "8608250003087",
+        "group": "  ",
+        "uniqueIdentifier": " ",
+        "dateCreated": "04-09-2016- 07:50:46",
+        "dateLastUpdated": "04-09-2016- 07:50:46",
+        "status": "Active",         
+        "id":87
+        
+    },
+    {
+        "vendorName": "African Explosives",
+        "registrationNo": "8608250003087",
+        "group": "  ",
+        "uniqueIdentifier": " ",
+        "dateCreated": "04-09-2016- 07:50:46",
+        "dateLastUpdated": "04-09-2016- 07:50:46",
+        "status": "Active",         
+        "id":89
+        
+    },
+    {
+        "vendorName": "Agilent Technologies",
+        "registrationNo": "8608250003087",
+        "group": " ",
+        "uniqueIdentifier": " ",
+        "dateCreated": "03-09-2016- 22:43:00",
+        "dateLastUpdated": "04-09-2016- 07:50:46",
+        "status": "Restricted",         
+        "id":90
+        
+    },
+    {
+        "vendorName": "A & R Civils",
+        "registrationNo": "8608250003087",
+        "group": " ",
+        "uniqueIdentifier": " ",
+        "dateCreated": "04-09-2016- 07:50:46",
+        "dateLastUpdated": "04-09-2016- 07:50:46",
+        "status": "Active",         
+        "id":91
+        
+    },
+    {
+        "vendorName": "A & R Engineering & Mining Supplies",
+        "registrationNo": "8608250003087",
+        "group": "  ",
+        "uniqueIdentifier": " ",
+        "dateCreated": "04-09-2016- 07:50:46",
+        "dateLastUpdated": "04-09-2016- 07:50:46",
+        "status": "Active",         
+        "id":92
+        
+    },
+    {
+        "vendorName": "ABB Holdings (Pty) Ltd",
+        "registrationNo": "8608250003087",
+        "group": "  ",
+        "uniqueIdentifier": " ",
+        "dateCreated": "04-09-2016- 07:50:46",
+        "dateLastUpdated": "04-09-2016- 07:50:46",
+        "status": "Restricted",         
+        "id":93
+        
+    },
+    {
+        "vendorName": "Abbott Laboratories SA",
+        "registrationNo": "8608250003087",
+        "group": "  ",
+        "uniqueIdentifier": " ",
+        "dateCreated": "04-09-2016- 07:50:46",
+        "dateLastUpdated": "04-09-2016- 07:50:46",
+        "status": "In-active",         
+        "id":94
+        
+    },
+    {
+        "vendorName": "Adcorp holdings",
+        "registrationNo": "8608250003087",
+        "group": "  ",
+        "uniqueIdentifier": " ",
+        "dateCreated": "04-09-2016- 07:50:46",
+        "dateLastUpdated": "04-09-2016- 07:50:46",
+        "status": "Restricted",         
+        "id":95
+        
+    },
+    {
+        "vendorName": "Aerontec",
+        "registrationNo": "8608250003087",
+        "group": "  ",
+        "uniqueIdentifier": " ",
+        "dateCreated": "04-09-2016- 07:50:46",
+        "dateLastUpdated": "04-09-2016- 07:50:46",
+        "status": "In-active",         
+        "id":96
+        
+    },
+    {
+        "vendorName": "Africa Meeting Reading",
+        "registrationNo": "8608250003087",
+        "group": "  ",
+        "uniqueIdentifier": " ",
+        "dateCreated": "04-09-2016- 07:50:46",
+        "dateLastUpdated": "04-09-2016- 07:50:46",
+        "status": "In-active",         
+        "id":97
+        
+    },
+    {
+        "vendorName": "African Carbon Union",
+        "registrationNo": "8608250003087",
+        "group": "  ",
+        "uniqueIdentifier": " ",
+        "dateCreated": "04-09-2016- 07:50:46",
+        "dateLastUpdated": "04-09-2016- 07:50:46",
+        "status": "Active",         
+        "id":98
+        
+    },
+    {
+        "vendorName": "African Explosives",
+        "registrationNo": "8608250003087",
+        "group": "  ",
+        "uniqueIdentifier": " ",
+        "dateCreated": "04-09-2016- 07:50:46",
+        "dateLastUpdated": "04-09-2016- 07:50:46",
+        "status": "Active",         
+        "id":99
+        
+    },
+    {
+        "vendorName": "Agilent Technologies",
+        "registrationNo": "8608250003087",
+        "group": " ",
+        "uniqueIdentifier": " ",
+        "dateCreated": "03-09-2016- 22:43:00",
+        "dateLastUpdated": "04-09-2016- 07:50:46",
+        "status": "Restricted",         
+        "id":100
+        
+    }
+
+    
+]

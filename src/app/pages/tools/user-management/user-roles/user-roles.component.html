@@ -1,0 +1,12 @@
+<h4>User Roles</h4>
+<div class="row">
+  <div class="col-md-12" [formGroup]="userRolesForm">
+    <div class="form-group row">
+      <div class="col-md-12">
+        <div class="radio" *ngFor="let role of userRoles">
+          <label><input type="radio" name="role" [value]="role.role" formControlName="role">&nbsp;&nbsp;&nbsp;&nbsp;{{ role.role }}</label>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

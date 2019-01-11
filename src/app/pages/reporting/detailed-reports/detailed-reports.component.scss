@@ -1,0 +1,22 @@
+.search-container {
+    align-items: center;
+    
+    .actions {
+        list-style-type: none;
+        display: flex;
+
+        li {
+            margin: 10px 0px 10px 10px;
+            padding-right: 10px;
+            color: black;
+
+            i {
+                color: red;
+            }
+
+            &:not(:last-child) {
+                border-right: 1px solid grey;
+            } 
+        }
+    }
+}

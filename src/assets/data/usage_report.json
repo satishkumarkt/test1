@@ -1,0 +1,44 @@
+[
+    {
+        "userName": "sazisipho@lexisnexis.co.za",
+        "noOfEmployeesAdded": 4,
+        "noOfVendorsAdded": 3,
+        "noOfAcknowledgements": 16,
+        "noOfTimesUserSigned": 12
+    },
+    {
+        "userName": "bhavesh@digicube.co.za",
+        "noOfEmployeesAdded": 2,
+        "noOfVendorsAdded": 0,
+        "noOfAcknowledgements": 9,
+        "noOfTimesUserSigned": 6
+    },
+    {
+        "userName": "ritesh.sewraj@lexisnexis.co.za",
+        "noOfEmployeesAdded": 0,
+        "noOfVendorsAdded": 4,
+        "noOfAcknowledgements": 5,
+        "noOfTimesUserSigned": 3
+    },
+    {
+        "userName": "bruce@sapientsoft.co.za",
+        "noOfEmployeesAdded": 2,
+        "noOfVendorsAdded": 0,
+        "noOfAcknowledgements": 0,
+        "noOfTimesUserSigned": 5
+    },
+    {
+        "userName": "fiona.strydom@lexisnexis.co.za",
+        "noOfEmployeesAdded": 1,
+        "noOfVendorsAdded": 1,
+        "noOfAcknowledgements": 2,
+        "noOfTimesUserSigned": 14
+    },
+    {
+        "userName": "bhavesh@digicube.co.za",
+        "noOfEmployeesAdded": 2,
+        "noOfVendorsAdded": 0,
+        "noOfAcknowledgements": 9,
+        "noOfTimesUserSigned": 9
+    }
+]

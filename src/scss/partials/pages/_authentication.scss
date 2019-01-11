@@ -1,0 +1,94 @@
+/* =======================================
+      Authentication-page css start
+ ========================================= */
+
+.login-block {
+    margin: 30px auto;
+    .auth-box {
+        margin: 20px auto 0 auto;
+        max-width: 650px;
+        background-color: rgba(255, 255, 255, 0.9);
+        .confirm h3 {
+            color: $primary-color;
+            font-size: 34px;
+        }
+        i.icofont-check-circled {
+            font-size: 42px;
+        }
+    }
+    &.offline-404 {
+        .auth-box {
+            max-width: 650px;
+            h1 {
+                color: #2c3e50;
+                font-size: 160px;
+                font-weight: 500;
+                letter-spacing: 5px;
+                text-shadow: 3px -2px 4px rgba(128, 128, 128, 0.57);
+            }
+            @media only screen and (max-width: 992px) {
+                margin-top: 45px;
+            }
+            @media only screen and (max-width: 575px) {
+                h1 {
+                    font-size: 60px;
+                }
+                h2 {
+                    font-size: 0.8rem;
+                }
+            }
+        }
+    }
+}
+
+.footer {
+    background-color: $white;
+    color: $lexisDark;
+    padding: 0px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 9999;
+    ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        li {
+            display: inline-block;
+            margin: 0 5px;
+            padding: 0 10px 0 0px;
+            border-right: solid 1px $primary-dark-color;
+            &:last-child {
+                border: none;
+            }
+        }
+    }
+    .footerlinksp{
+        padding: 15px 0;
+        .footerlinks {
+            li {
+                
+            }
+        }
+    }
+    
+    .footerlinks-right {
+        li {
+            &:last-child {
+                border: none;
+            }
+            &:first-child {
+                border: none;
+            }
+            .support{
+                background-color: $primary-dark-color;
+                padding: 15px 25px;
+                display: inline-block;
+                color: $white;
+            }
+        }
+    }
+    .copyright{
+        padding: 20px 20px 15px;
+    }
+}

@@ -1,0 +1,31 @@
+<form [formGroup]="employeeEditForm" (ngSubmit)="onSubmit()">
+  <div class="row emp-list">
+    <div class="col-sm-12 col-xl-12 text-right tab-top-right-section">
+      <div class="top-buttons-section">
+        <p>List as restricted employee:</p>
+        <ui-switch class="js-single" color="#EA1C2C" switchColor="#fff" size="small" formControlName="isRestrictedEmployee"
+          checked></ui-switch>
+        <span>Activate employee</span>
+        <ui-switch class="js-single" color="#EA1C2C" switchColor="#fff" size="small" formControlName="isActivateEmployee"
+          checked></ui-switch>
+        <button class="btn btn-primary ripple light" (click)="cancel()">Update</button>
+        <button class="btn btn-inverse ripple light m-l-10" (click)="cancel()">Cancel</button>
+      </div>
+    </div>
+  </div>
+  <perfect-scrollbar class="overflow-container" [style.width]="'100%'" [style.height]="'658px'" [config]="config">
+    <div class="row">
+      <div class="col-xl-4">
+        <app-personal-details [personalDetails]='employeeEditForm.controls.personalDetails'></app-personal-details>
+        <app-bank-details [bankDetails]="employeeEditForm.controls.bankDetails"></app-bank-details>
+      </div>
+      <div class="col-xl-8">
+        <app-contact-details [contactDetails]="employeeEditForm.controls.contactDetails"></app-contact-details>
+        <hr>
+        <app-office-employee-details [employeeDetails]="employeeEditForm.controls.employeeDetails"></app-office-employee-details>
+        <hr>
+        <app-next-of-kin></app-next-of-kin>
+      </div>
+    </div>
+  </perfect-scrollbar>
+</form>

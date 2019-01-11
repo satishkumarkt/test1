@@ -1,0 +1,8 @@
+[
+    {
+        "alert": "Vendor directors are active employees"
+    },
+    {
+        "alert": "Vendor directors are directors of another active vendor"
+    }
+]

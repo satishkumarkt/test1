@@ -1,0 +1,63 @@
+<app-card [title]="'Vendor Results'" [personName]="vendor.vendorName" [showBreadcrumbs]="true" [titleIcon]="'icofont-presentation'"
+  [@fadeInOutTranslate] [cardOptionBlock]="false" class="m-t-15 cardBlock">
+  <button class="btn btn-inverse ripple light m-l-10" (click)="goBack()">Back</button>
+  <h4>Report for {{ vendor.vendorName }} - (Reg No.: {{ vendor.vendorRegNo }})</h4>
+  <table>
+    <tr>
+      <th>Account Information Checked</th>
+      <th>Status</th>
+    </tr>
+    <tr>
+      <td>Account Found</td>
+      <td>Accepted</td>
+    </tr>
+    <tr>
+      <td>Account is open</td>
+      <td>Accepted</td>
+    </tr>
+    <tr>
+      <td>Account numbers match</td>
+      <td>Accepted</td>
+    </tr>
+    <tr>
+      <td>Surname or company name do not match</td>
+      <td>Pending</td>
+    </tr>
+    <tr>
+      <td>Initials do not match</td>
+      <td>Accepted</td>
+    </tr>
+    <tr>
+      <td>Account is open for 3 months</td>
+      <td>Accepted</td>
+    </tr>
+    <tr>
+      <td>Input account type is correct</td>
+      <td>Accepted</td>
+    </tr>
+    <tr>
+      <td>Account accepts debit</td>
+      <td>Pending</td>
+    </tr>
+    <tr>
+      <td>Account accepts credit</td>
+      <td>Accepted</td>
+    </tr>
+  </table>
+</app-card>
+<div id="styleSelector" [ngClass]="configOpenRightBar">
+  <div class="selector-toggle">
+    <a href="javascript:" placement="left" class="ripple light" ngbTooltip=" Suggested Action on Alert" (click)="toggleRightbar()"></a>
+  </div>
+  <ul>
+    <li>
+      <p class="selector-title">Request Lastest BBE Certificate for Vendor</p>
+    </li>
+    <li>
+      <p class="selector-title">Suspend service with Vendor</p>
+    </li>
+    <li>
+      <p class="selector-title">Deactivate Vendor</p>
+    </li>
+  </ul>
+</div>
